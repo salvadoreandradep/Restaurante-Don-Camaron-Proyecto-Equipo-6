@@ -75,5 +75,17 @@ namespace Semena_6___Parcial_1
                 ayuda aa = new ayuda();
                 aa.Show();
         }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fatura ff = new fatura();
+            ff.Show();
+        }
+
+        private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            acerdade a2 = new acerdade();
+            a.Show();
+        }
     }
 }

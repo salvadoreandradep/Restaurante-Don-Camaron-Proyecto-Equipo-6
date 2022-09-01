@@ -29,6 +29,7 @@ namespace Semena_6___Parcial_1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu_principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.comboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combo1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,12 +39,12 @@ namespace Semena_6___Parcial_1
             this.bocadillosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.postresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.heladosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acerdaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -126,6 +127,13 @@ namespace Semena_6___Parcial_1
             this.heladosToolStripMenuItem.Text = "Helados";
             this.heladosToolStripMenuItem.Click += new System.EventHandler(this.heladosToolStripMenuItem_Click);
             // 
+            // facturaToolStripMenuItem
+            // 
+            this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.facturaToolStripMenuItem.Text = "Factura";
+            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
@@ -138,6 +146,7 @@ namespace Semena_6___Parcial_1
             this.acerdaDeToolStripMenuItem.Name = "acerdaDeToolStripMenuItem";
             this.acerdaDeToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.acerdaDeToolStripMenuItem.Text = "Acerda de";
+            this.acerdaDeToolStripMenuItem.Click += new System.EventHandler(this.acerdaDeToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -164,12 +173,6 @@ namespace Semena_6___Parcial_1
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // facturaToolStripMenuItem
-            // 
-            this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.facturaToolStripMenuItem.Text = "Factura";
-            // 
             // menu_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,6 +180,7 @@ namespace Semena_6___Parcial_1
             this.ClientSize = new System.Drawing.Size(1086, 684);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "menu_principal";
             this.Text = "menu_principal";

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Semena_6___Parcial_1
 {
-    public partial class ayuda : Form
+    public partial class fatura : Form
     {
-        public ayuda()
+        public fatura()
         {
             InitializeComponent();
         }
@@ -25,14 +25,7 @@ namespace Semena_6___Parcial_1
         private void button1_Click(object sender, EventArgs e)
         {
 
-
-            txt1.Text = "";
-            txt2.Text = "";
-
-
-            MessageBox.Show("Si Mensaje a sigo enviado.", " Aviso ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-           
+            MessageBox.Show("La Factura fue tomada y enviada a la base de datos.", " Aviso ", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

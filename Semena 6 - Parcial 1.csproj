@@ -82,6 +82,12 @@
     <Compile Include="combo3.Designer.cs">
       <DependentUpon>combo3.cs</DependentUpon>
     </Compile>
+    <Compile Include="fatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fatura.Designer.cs">
+      <DependentUpon>fatura.cs</DependentUpon>
+    </Compile>
     <Compile Include="helado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,8 +108,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="acerdade.resx">
+      <DependentUpon>acerdade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ayuda.resx">
       <DependentUpon>ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bocadillos.resx">
+      <DependentUpon>bocadillos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="combo1.resx">
+      <DependentUpon>combo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="combo2.resx">
+      <DependentUpon>combo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="combo3.resx">
+      <DependentUpon>combo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fatura.resx">
+      <DependentUpon>fatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helado.resx">
+      <DependentUpon>helado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

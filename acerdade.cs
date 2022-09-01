@@ -16,5 +16,10 @@ namespace Semena_6___Parcial_1
         {
             InitializeComponent();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

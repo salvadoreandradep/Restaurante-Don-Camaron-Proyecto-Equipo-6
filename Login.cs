@@ -26,6 +26,7 @@ namespace Semena_6___Parcial_1
                 f1.Show();
                 this.Hide();
               
+              
             }
             else
                 MessageBox.Show("usuario o contraseña incorrecta", " Nose encontro usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
