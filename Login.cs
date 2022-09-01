@@ -25,10 +25,22 @@ namespace Semena_6___Parcial_1
                 menu_principal f1 = new menu_principal();
                 f1.Show();
                 this.Hide();
+              
             }
             else
                 MessageBox.Show("usuario o contraseña incorrecta", " Nose encontro usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+           Close();
         }
     }
 }

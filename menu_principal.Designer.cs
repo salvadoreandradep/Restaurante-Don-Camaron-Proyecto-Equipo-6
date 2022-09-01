@@ -31,14 +31,14 @@ namespace Semena_6___Parcial_1
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.comboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.entradasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.postresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combo1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combo3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.entradasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bocadillosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.postresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.heladosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acerdaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,6 +70,27 @@ namespace Semena_6___Parcial_1
             this.comboToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.comboToolStripMenuItem.Text = "Combo";
             // 
+            // combo1ToolStripMenuItem
+            // 
+            this.combo1ToolStripMenuItem.Name = "combo1ToolStripMenuItem";
+            this.combo1ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.combo1ToolStripMenuItem.Text = "Combo 1";
+            this.combo1ToolStripMenuItem.Click += new System.EventHandler(this.combo1ToolStripMenuItem_Click);
+            // 
+            // combo2ToolStripMenuItem
+            // 
+            this.combo2ToolStripMenuItem.Name = "combo2ToolStripMenuItem";
+            this.combo2ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.combo2ToolStripMenuItem.Text = "Combo 2";
+            this.combo2ToolStripMenuItem.Click += new System.EventHandler(this.combo2ToolStripMenuItem_Click);
+            // 
+            // combo3ToolStripMenuItem
+            // 
+            this.combo3ToolStripMenuItem.Name = "combo3ToolStripMenuItem";
+            this.combo3ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.combo3ToolStripMenuItem.Text = "Combo 3";
+            this.combo3ToolStripMenuItem.Click += new System.EventHandler(this.combo3ToolStripMenuItem_Click);
+            // 
             // entradasToolStripMenuItem
             // 
             this.entradasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -79,6 +100,13 @@ namespace Semena_6___Parcial_1
             this.entradasToolStripMenuItem.Text = "Entradas";
             this.entradasToolStripMenuItem.Click += new System.EventHandler(this.entradasToolStripMenuItem_Click);
             // 
+            // bocadillosToolStripMenuItem
+            // 
+            this.bocadillosToolStripMenuItem.Name = "bocadillosToolStripMenuItem";
+            this.bocadillosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.bocadillosToolStripMenuItem.Text = "Bocadillos";
+            this.bocadillosToolStripMenuItem.Click += new System.EventHandler(this.bocadillosToolStripMenuItem_Click);
+            // 
             // postresToolStripMenuItem
             // 
             this.postresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -87,46 +115,19 @@ namespace Semena_6___Parcial_1
             this.postresToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.postresToolStripMenuItem.Text = "Postres";
             // 
+            // heladosToolStripMenuItem
+            // 
+            this.heladosToolStripMenuItem.Name = "heladosToolStripMenuItem";
+            this.heladosToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.heladosToolStripMenuItem.Text = "Helados";
+            this.heladosToolStripMenuItem.Click += new System.EventHandler(this.heladosToolStripMenuItem_Click);
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // combo1ToolStripMenuItem
-            // 
-            this.combo1ToolStripMenuItem.Name = "combo1ToolStripMenuItem";
-            this.combo1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.combo1ToolStripMenuItem.Text = "Combo 1";
-            this.combo1ToolStripMenuItem.Click += new System.EventHandler(this.combo1ToolStripMenuItem_Click);
-            // 
-            // combo2ToolStripMenuItem
-            // 
-            this.combo2ToolStripMenuItem.Name = "combo2ToolStripMenuItem";
-            this.combo2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.combo2ToolStripMenuItem.Text = "Combo 2";
-            this.combo2ToolStripMenuItem.Click += new System.EventHandler(this.combo2ToolStripMenuItem_Click);
-            // 
-            // combo3ToolStripMenuItem
-            // 
-            this.combo3ToolStripMenuItem.Name = "combo3ToolStripMenuItem";
-            this.combo3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.combo3ToolStripMenuItem.Text = "Combo 3";
-            this.combo3ToolStripMenuItem.Click += new System.EventHandler(this.combo3ToolStripMenuItem_Click);
-            // 
-            // bocadillosToolStripMenuItem
-            // 
-            this.bocadillosToolStripMenuItem.Name = "bocadillosToolStripMenuItem";
-            this.bocadillosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.bocadillosToolStripMenuItem.Text = "Bocadillos";
-            this.bocadillosToolStripMenuItem.Click += new System.EventHandler(this.bocadillosToolStripMenuItem_Click);
-            // 
-            // heladosToolStripMenuItem
-            // 
-            this.heladosToolStripMenuItem.Name = "heladosToolStripMenuItem";
-            this.heladosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.heladosToolStripMenuItem.Text = "Helados";
-            this.heladosToolStripMenuItem.Click += new System.EventHandler(this.heladosToolStripMenuItem_Click);
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // acerdaDeToolStripMenuItem
             // 
@@ -145,7 +146,7 @@ namespace Semena_6___Parcial_1
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 

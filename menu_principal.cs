@@ -29,6 +29,9 @@ namespace Semena_6___Parcial_1
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Login ll = new Login();
+            ll.Show();
+
             Close();
         }
 
@@ -65,6 +68,12 @@ namespace Semena_6___Parcial_1
         {
             helado hh = new helado ();
             hh.Show();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+                ayuda aa = new ayuda();
+                aa.Show();
         }
     }
 }
