@@ -201,6 +201,7 @@ namespace Semena_6___Parcial_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(481, 617);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -222,6 +223,7 @@ namespace Semena_6___Parcial_1
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fatura";
             this.Text = "fatura";
+            this.Load += new System.EventHandler(this.fatura_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

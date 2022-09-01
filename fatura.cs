@@ -27,5 +27,10 @@ namespace Semena_6___Parcial_1
 
             MessageBox.Show("La Factura fue tomada y enviada a la base de datos.", " Aviso ", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void fatura_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

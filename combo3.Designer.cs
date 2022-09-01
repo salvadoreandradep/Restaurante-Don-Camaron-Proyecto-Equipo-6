@@ -91,7 +91,7 @@ namespace Semena_6___Parcial_1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Semena_6___Parcial_1.Properties.Resources.lonja_a_las_brasas;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(382, 308);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -21,5 +21,10 @@ namespace Semena_6___Parcial_1
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

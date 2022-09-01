@@ -92,7 +92,7 @@ namespace Semena_6___Parcial_1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Semena_6___Parcial_1.Properties.Resources.camarones;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(382, 308);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

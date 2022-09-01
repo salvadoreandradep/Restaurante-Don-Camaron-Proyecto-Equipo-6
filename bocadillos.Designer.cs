@@ -47,6 +47,7 @@ namespace Semena_6___Parcial_1
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -60,7 +61,7 @@ namespace Semena_6___Parcial_1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(375, 212);
+            this.button2.Location = new System.Drawing.Point(390, 213);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
