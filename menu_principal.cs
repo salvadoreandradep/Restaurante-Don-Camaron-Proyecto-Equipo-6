@@ -85,7 +85,7 @@ namespace Semena_6___Parcial_1
         private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             acerdade a2 = new acerdade();
-            a.Show();
+            a2.Show();
         }
     }
 }
