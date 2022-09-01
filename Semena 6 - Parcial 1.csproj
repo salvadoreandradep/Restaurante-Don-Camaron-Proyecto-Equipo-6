@@ -117,9 +117,6 @@
     <EmbeddedResource Include="bocadillos.resx">
       <DependentUpon>bocadillos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="combo1.resx">
-      <DependentUpon>combo1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="combo2.resx">
       <DependentUpon>combo2.cs</DependentUpon>
     </EmbeddedResource>
