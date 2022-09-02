@@ -35,9 +35,9 @@ namespace Semena_6___Parcial_1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(314, 161);
+            this.button1.Location = new System.Drawing.Point(314, 75);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(183, 109);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
