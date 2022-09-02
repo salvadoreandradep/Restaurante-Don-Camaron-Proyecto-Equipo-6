@@ -46,11 +46,11 @@ namespace Semena_6___Parcial_1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Pink;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 54.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Alex Brush", 54.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label1.Location = new System.Drawing.Point(315, 9);
+            this.label1.Location = new System.Drawing.Point(308, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 83);
+            this.label1.Size = new System.Drawing.Size(270, 91);
             this.label1.TabIndex = 2;
             this.label1.Text = "Helados ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -68,7 +68,7 @@ namespace Semena_6___Parcial_1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Semena_6___Parcial_1.Properties.Resources.helado_a2;
-            this.pictureBox1.Location = new System.Drawing.Point(-26, -88);
+            this.pictureBox1.Location = new System.Drawing.Point(-20, -85);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(908, 632);
             this.pictureBox1.TabIndex = 4;
@@ -78,10 +78,10 @@ namespace Semena_6___Parcial_1
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Pink;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 102);
+            this.label2.Font = new System.Drawing.Font("MINECRAFT PE", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 29);
+            this.label2.Size = new System.Drawing.Size(232, 33);
             this.label2.TabIndex = 5;
             this.label2.Text = "Helado de Fresas";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -90,10 +90,10 @@ namespace Semena_6___Parcial_1
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Pink;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 154);
+            this.label3.Font = new System.Drawing.Font("MINECRAFT PE", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(240, 29);
+            this.label3.Size = new System.Drawing.Size(276, 33);
             this.label3.TabIndex = 5;
             this.label3.Text = "Helado de Chocolate";
             this.label3.Click += new System.EventHandler(this.label2_Click);
@@ -102,17 +102,17 @@ namespace Semena_6___Parcial_1
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Pink;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 202);
+            this.label4.Font = new System.Drawing.Font("MINECRAFT PE", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(11, 208);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(229, 29);
+            this.label4.Size = new System.Drawing.Size(266, 33);
             this.label4.TabIndex = 5;
             this.label4.Text = "Helado de Pistacho ";
             this.label4.Click += new System.EventHandler(this.label2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(259, 209);
+            this.button3.Location = new System.Drawing.Point(283, 212);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 3;
@@ -122,7 +122,7 @@ namespace Semena_6___Parcial_1
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(270, 160);
+            this.button4.Location = new System.Drawing.Point(294, 160);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 3;
@@ -132,7 +132,7 @@ namespace Semena_6___Parcial_1
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(235, 108);
+            this.button5.Location = new System.Drawing.Point(250, 108);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 3;

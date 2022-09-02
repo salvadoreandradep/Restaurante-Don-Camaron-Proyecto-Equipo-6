@@ -123,6 +123,16 @@ namespace Semena_6___Parcial_1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bocadillo2 {
+            get {
+                object obj = ResourceManager.GetObject("bocadillo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap camarones {
             get {
                 object obj = ResourceManager.GetObject("camarones", resourceCulture);

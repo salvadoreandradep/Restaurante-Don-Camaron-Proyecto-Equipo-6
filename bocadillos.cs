@@ -16,5 +16,10 @@ namespace Semena_6___Parcial_1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
