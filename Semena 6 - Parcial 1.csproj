@@ -117,6 +117,9 @@
     <EmbeddedResource Include="bocadillos.resx">
       <DependentUpon>bocadillos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="combo1.resx">
+      <DependentUpon>combo1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="combo2.resx">
       <DependentUpon>combo2.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +190,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bocadillo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mariscos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camarones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaaaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lonja-a-las-brasas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\444.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
