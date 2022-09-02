@@ -161,5 +161,32 @@
   <ItemGroup>
     <None Include="Resources\04df0c47-b8de-4a50-9cf1-076fc2b9d873-1658107158715.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\472 [Convertido].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Helado fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helados.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sin fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helado a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helado a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helado a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocadillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocadillo1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

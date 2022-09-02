@@ -118,7 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bocadillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bocadillo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_04df0c47_b8de_4a50_9cf1_076fc2b9d873_1658107158715" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\04df0c47-b8de-4a50-9cf1-076fc2b9d873-1658107158715.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Helado fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Helado fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="helados" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helados.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="helado a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helado a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="472 [Convertido]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\472 [Convertido].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="helado a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helado a2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="helado a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helado a1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sin fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sin fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bocadillo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bocadillo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
