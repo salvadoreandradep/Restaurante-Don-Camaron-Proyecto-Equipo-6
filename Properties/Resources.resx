@@ -130,6 +130,9 @@
   <data name="bocadillo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bocadillo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bocadillo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bocadillo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mariscos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mariscos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,6 +145,9 @@
   <data name="bocadillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bocadillo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Helado fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Helado fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,25 +157,34 @@
   <data name="camarones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\camarones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="472 [Convertido]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\472 [Convertido].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sin fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sin fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_04df0c47_b8de_4a50_9cf1_076fc2b9d873_1658107158715" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\04df0c47-b8de-4a50-9cf1-076fc2b9d873-1658107158715.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="helado a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\helado a2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_301e96a5826fb26ce858e5cedbdea89a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\301e96a5826fb26ce858e5cedbdea89a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aaaaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aaaaaa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bocadillo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bocadillo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="helado a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helado a2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_301e96a5826fb26ce858e5cedbdea89a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\301e96a5826fb26ce858e5cedbdea89a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sin fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sin fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guardar-button-png-hi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar-button-png-hi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
