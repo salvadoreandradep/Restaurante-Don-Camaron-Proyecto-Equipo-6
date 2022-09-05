@@ -22,27 +22,22 @@ namespace Semena_6___Parcial_1
 
         }
 
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+
+
+        private void combosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Login ll = new Login();
-            ll.Show();
-
-            Close();
+           
         }
 
         private void combo1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            combo1 c1 = new combo1();
-            c1.Show();
+            combo1 cc = new combo1();
+            cc.Show();
         }
 
         private void combo2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             combo2 c2 = new combo2();
             c2.Show();
         }
@@ -53,9 +48,16 @@ namespace Semena_6___Parcial_1
             c3.Show();
         }
 
-        private void entradasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            fatura f1 = new fatura();
+            f1.ShowDialog();
+        }
 
+        private void heladosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            helado h1 = new helado();
+            h1.Show();
         }
 
         private void bocadillosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,28 +66,16 @@ namespace Semena_6___Parcial_1
             bb.Show();
         }
 
-        private void heladosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            helado hh = new helado ();
-            hh.Show();
+            acerdade aa = new acerdade();
+            aa.Show();
         }
 
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-                ayuda aa = new ayuda();
-                aa.Show();
-        }
-
-        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fatura ff = new fatura();
-            ff.Show();
-        }
-
-        private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            acerdade a2 = new acerdade();
-            a2.Show();
+            ayuda a1 = new ayuda();
+            a1.Show();
         }
     }
 }

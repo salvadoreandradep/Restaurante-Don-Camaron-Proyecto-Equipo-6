@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Semena_6___Parcial_1
 {
@@ -16,11 +17,17 @@ namespace Semena_6___Parcial_1
         {
             InitializeComponent();
         }
+        SqlConnection con = new SqlConnection("Data Source=usuario-pc\\administradores;Initial Catalog= Usuarios; User ID= as; Password=123456");
+
+
+      
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (txtusuario.Text == "1" || txtpass.Text == "1")
+            if (txtusuario.Text == "as" || txtpass.Text == "123456")
             {
                 menu_principal f1 = new menu_principal();
                 f1.Show();
@@ -31,6 +38,7 @@ namespace Semena_6___Parcial_1
             else
                 MessageBox.Show("usuario o contraseña incorrecta", " Nose encontro usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+         
         }
 
         private void Login_Load(object sender, EventArgs e)

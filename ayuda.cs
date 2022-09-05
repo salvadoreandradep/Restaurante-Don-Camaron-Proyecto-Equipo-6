@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace Semena_6___Parcial_1
 {
@@ -22,11 +24,40 @@ namespace Semena_6___Parcial_1
 
         }
 
+       
+
         private void button1_Click(object sender, EventArgs e)
         {
+           
 
 
-            txt1.Text = "";
+            StreamReader leer = new StreamReader(@"C:\Users\salva\Downloads");
+            string Linea = "";
+
+           
+            try
+            {
+                Linea = leer.ReadLine();
+                while (Linea != null)
+                {
+                    richTextBox1.AppendText(Linea + "\\n");
+                    Linea = leer.ReadLine();
+                }
+
+
+            }
+
+            catch
+
+            {
+
+                MessageBox.Show("Error");
+            
+            }
+
+
+
+            
             txt2.Text = "";
 
 

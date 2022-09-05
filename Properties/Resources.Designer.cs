@@ -73,6 +73,16 @@ namespace Semena_6___Parcial_1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _301e96a5826fb26ce858e5cedbdea89a {
+            get {
+                object obj = ResourceManager.GetObject("_301e96a5826fb26ce858e5cedbdea89a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _444 {
             get {
                 object obj = ResourceManager.GetObject("444", resourceCulture);
