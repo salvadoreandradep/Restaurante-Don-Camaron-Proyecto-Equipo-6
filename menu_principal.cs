@@ -77,5 +77,22 @@ namespace Semena_6___Parcial_1
             ayuda a1 = new ayuda();
             a1.Show();
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            empleados ee = new empleados();
+            ee.Show();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clientes cc = new clientes();
+            cc.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
