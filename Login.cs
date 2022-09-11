@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.OleDb;
+using System.Data.SqlClient;
 
 namespace Semena_6___Parcial_1
 {
@@ -23,25 +24,32 @@ namespace Semena_6___Parcial_1
         }
 
 
-
-        OleDbConnection Conectar = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Salvador\source\repos\Semena-6---Parcial-1\basededatosaccess\Database1.mdb");
-
+        SqlConnection sqlnet = new SqlConnection("Data Source=DESKTOP-APECPOJ;Initial Catalog=login;Integrated Security=True");
+        OleDbConnection Conectar = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\salva\source\repos\Semana-7-Login-con-base-de-datos\basededatosaccess\Database1.mdb");
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            if (txtusuario.Text == "as" || txtpass.Text == "123456")
+            string sqlconsulta = "select clave, usuario from usuarios where clave ='" + txtpass.Text + "' and usuario = '" + txtusuario.Text + "';";
+            SqlCommand comandosql = new SqlCommand(sqlconsulta, sqlnet);
+            SqlDataReader sqldb;
+            sqldb = comandosql.ExecuteReader();
+            Boolean existereg = sqldb.HasRows;
+            if (existereg)
             {
+                MessageBox.Show("bienvenido al sistema: " + txtusuario.Text);
                 menu_principal f1 = new menu_principal();
                 f1.Show();
                 this.Hide();
-              
-              
+
             }
             else
-                MessageBox.Show("usuario o contraseña incorrecta", " Nose encontro usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            {
+                MessageBox.Show("usuario o contraseña incorrecto trate de nuevo");
+                return;
+            }
+            sqlnet.Close();
 
-         
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -49,6 +57,7 @@ namespace Semena_6___Parcial_1
 
             try
             {
+                sqlnet.Open();
                 Conectar.Open();
                 MessageBox.Show("Online");
 
