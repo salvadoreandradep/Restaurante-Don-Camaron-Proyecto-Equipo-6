@@ -16,7 +16,7 @@ namespace Semena_6___Parcial_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new login());
         }
     }
 }
