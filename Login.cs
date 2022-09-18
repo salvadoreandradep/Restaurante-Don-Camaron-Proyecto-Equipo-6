@@ -108,6 +108,11 @@ namespace Semena_6___Parcial_1
             }
             sqlnet.Close();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
 

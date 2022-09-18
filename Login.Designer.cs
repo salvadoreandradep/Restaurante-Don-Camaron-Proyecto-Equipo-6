@@ -38,13 +38,14 @@ namespace Semena_6___Parcial_1
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(89, 217);
+            this.button1.Location = new System.Drawing.Point(89, 209);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 23);
             this.button1.TabIndex = 0;
@@ -54,7 +55,7 @@ namespace Semena_6___Parcial_1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(266, 217);
+            this.button2.Location = new System.Drawing.Point(266, 209);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 23);
             this.button2.TabIndex = 1;
@@ -116,6 +117,7 @@ namespace Semena_6___Parcial_1
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DarkOrange;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
             this.button3.Location = new System.Drawing.Point(410, 6);
             this.button3.Name = "button3";
@@ -123,12 +125,23 @@ namespace Semena_6___Parcial_1
             this.button3.TabIndex = 8;
             this.button3.Text = "X";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(187, 256);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(117, 23);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Registro de Usuario";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 291);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -161,5 +174,6 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
