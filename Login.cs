@@ -113,6 +113,11 @@ namespace Semena_6___Parcial_1
         {
             Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

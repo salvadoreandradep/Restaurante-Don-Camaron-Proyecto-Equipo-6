@@ -173,6 +173,26 @@ namespace Semena_6___Parcial_1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gender_Neutral_User_icon_icons_com_55902 {
+            get {
+                object obj = ResourceManager.GetObject("Gender_Neutral_User_icon-icons.com_55902", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gender_Neutral_User_icon_icons1 {
+            get {
+                object obj = ResourceManager.GetObject("Gender_Neutral_User_icon-icons1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap guardar_button_png_hi {
             get {
                 object obj = ResourceManager.GetObject("guardar-button-png-hi", resourceCulture);
