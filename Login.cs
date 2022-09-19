@@ -116,7 +116,9 @@ namespace Semena_6___Parcial_1
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            usuario us = new usuario();
+            us.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

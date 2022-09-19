@@ -29,25 +29,41 @@ namespace Semena_6___Parcial_1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtusu = new System.Windows.Forms.TextBox();
+            this.txtclave = new System.Windows.Forms.TextBox();
+            this.bprimero = new System.Windows.Forms.Button();
+            this.banterior = new System.Windows.Forms.Button();
+            this.bsiguiente = new System.Windows.Forms.Button();
+            this.bultimo = new System.Windows.Forms.Button();
+            this.bnuevo = new System.Windows.Forms.Button();
+            this.beliminar = new System.Windows.Forms.Button();
+            this.bmodificar = new System.Windows.Forms.Button();
+            this.bsalir = new System.Windows.Forms.Button();
+            this.bguardar = new System.Windows.Forms.Button();
+            this.bactualizar = new System.Windows.Forms.Button();
+            this.txtnivel = new System.Windows.Forms.ComboBox();
+            this.dataSet1 = new Semena_6___Parcial_1.DataSet1();
+            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usuariosTableAdapter = new Semena_6___Parcial_1.DataSet1TableAdapters.usuariosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Semena_6___Parcial_1.Properties.Resources.Gender_Neutral_User_icon_icons1;
+            this.pictureBox1.Location = new System.Drawing.Point(73, 56);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(145, 145);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -79,175 +95,194 @@ namespace Semena_6___Parcial_1
             this.label3.TabIndex = 3;
             this.label3.Text = "Nivel";
             // 
-            // textBox1
+            // txtusu
             // 
-            this.textBox1.Location = new System.Drawing.Point(354, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtusu.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "usuario", true));
+            this.txtusu.Location = new System.Drawing.Point(354, 80);
+            this.txtusu.Name = "txtusu";
+            this.txtusu.Size = new System.Drawing.Size(175, 20);
+            this.txtusu.TabIndex = 4;
+            this.txtusu.Visible = false;
             // 
-            // textBox2
+            // txtclave
             // 
-            this.textBox2.Location = new System.Drawing.Point(354, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtclave.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "clave", true));
+            this.txtclave.Location = new System.Drawing.Point(354, 123);
+            this.txtclave.Name = "txtclave";
+            this.txtclave.Size = new System.Drawing.Size(175, 20);
+            this.txtclave.TabIndex = 5;
             // 
-            // button1
+            // bprimero
             // 
-            this.button1.Location = new System.Drawing.Point(143, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Primero";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bprimero.Location = new System.Drawing.Point(143, 232);
+            this.bprimero.Name = "bprimero";
+            this.bprimero.Size = new System.Drawing.Size(75, 23);
+            this.bprimero.TabIndex = 6;
+            this.bprimero.Text = "Primero";
+            this.bprimero.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // banterior
             // 
-            this.button2.Location = new System.Drawing.Point(243, 232);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Anterior";
-            this.button2.UseVisualStyleBackColor = true;
+            this.banterior.Location = new System.Drawing.Point(243, 232);
+            this.banterior.Name = "banterior";
+            this.banterior.Size = new System.Drawing.Size(75, 23);
+            this.banterior.TabIndex = 7;
+            this.banterior.Text = "Anterior";
+            this.banterior.UseVisualStyleBackColor = true;
+            this.banterior.Click += new System.EventHandler(this.banterior_Click);
             // 
-            // button3
+            // bsiguiente
             // 
-            this.button3.Location = new System.Drawing.Point(344, 232);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Siguiente";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bsiguiente.Location = new System.Drawing.Point(344, 232);
+            this.bsiguiente.Name = "bsiguiente";
+            this.bsiguiente.Size = new System.Drawing.Size(75, 23);
+            this.bsiguiente.TabIndex = 8;
+            this.bsiguiente.Text = "Siguiente";
+            this.bsiguiente.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // bultimo
             // 
-            this.button4.Location = new System.Drawing.Point(444, 232);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Ultimo";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bultimo.Location = new System.Drawing.Point(444, 232);
+            this.bultimo.Name = "bultimo";
+            this.bultimo.Size = new System.Drawing.Size(75, 23);
+            this.bultimo.TabIndex = 9;
+            this.bultimo.Text = "Ultimo";
+            this.bultimo.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // bnuevo
             // 
-            this.button5.Location = new System.Drawing.Point(444, 264);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Salir";
-            this.button5.UseVisualStyleBackColor = true;
+            this.bnuevo.Location = new System.Drawing.Point(143, 264);
+            this.bnuevo.Name = "bnuevo";
+            this.bnuevo.Size = new System.Drawing.Size(75, 23);
+            this.bnuevo.TabIndex = 10;
+            this.bnuevo.Text = "Nuevo";
+            this.bnuevo.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // beliminar
             // 
-            this.button6.Location = new System.Drawing.Point(344, 264);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "Modificar";
-            this.button6.UseVisualStyleBackColor = true;
+            this.beliminar.Location = new System.Drawing.Point(243, 264);
+            this.beliminar.Name = "beliminar";
+            this.beliminar.Size = new System.Drawing.Size(75, 23);
+            this.beliminar.TabIndex = 11;
+            this.beliminar.Text = "Eliminar";
+            this.beliminar.UseVisualStyleBackColor = true;
+            this.beliminar.Click += new System.EventHandler(this.beliminar_Click);
             // 
-            // button7
+            // bmodificar
             // 
-            this.button7.Location = new System.Drawing.Point(243, 264);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "Eliminar";
-            this.button7.UseVisualStyleBackColor = true;
+            this.bmodificar.Location = new System.Drawing.Point(344, 264);
+            this.bmodificar.Name = "bmodificar";
+            this.bmodificar.Size = new System.Drawing.Size(75, 23);
+            this.bmodificar.TabIndex = 12;
+            this.bmodificar.Text = "Modificar";
+            this.bmodificar.UseVisualStyleBackColor = true;
+            this.bmodificar.Click += new System.EventHandler(this.bmodificar_Click);
             // 
-            // button8
+            // bsalir
             // 
-            this.button8.Location = new System.Drawing.Point(143, 264);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Nuevo";
-            this.button8.UseVisualStyleBackColor = true;
+            this.bsalir.Location = new System.Drawing.Point(444, 264);
+            this.bsalir.Name = "bsalir";
+            this.bsalir.Size = new System.Drawing.Size(75, 23);
+            this.bsalir.TabIndex = 13;
+            this.bsalir.Text = "Salir";
+            this.bsalir.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // bguardar
             // 
-            this.button10.Location = new System.Drawing.Point(344, 294);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 16;
-            this.button10.Text = "Actualizar";
-            this.button10.UseVisualStyleBackColor = true;
+            this.bguardar.Location = new System.Drawing.Point(143, 294);
+            this.bguardar.Name = "bguardar";
+            this.bguardar.Size = new System.Drawing.Size(75, 23);
+            this.bguardar.TabIndex = 14;
+            this.bguardar.Text = "Guardar";
+            this.bguardar.UseVisualStyleBackColor = true;
+            this.bguardar.Click += new System.EventHandler(this.bguardar_Click);
             // 
-            // button12
+            // bactualizar
             // 
-            this.button12.Location = new System.Drawing.Point(143, 294);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 14;
-            this.button12.Text = "Guardar";
-            this.button12.UseVisualStyleBackColor = true;
+            this.bactualizar.Location = new System.Drawing.Point(344, 294);
+            this.bactualizar.Name = "bactualizar";
+            this.bactualizar.Size = new System.Drawing.Size(75, 23);
+            this.bactualizar.TabIndex = 16;
+            this.bactualizar.Text = "Actualizar";
+            this.bactualizar.UseVisualStyleBackColor = true;
+            this.bactualizar.Click += new System.EventHandler(this.bactualizar_Click);
             // 
-            // pictureBox1
+            // txtnivel
             // 
-            this.pictureBox1.Image = global::Semena_6___Parcial_1.Properties.Resources.Gender_Neutral_User_icon_icons1;
-            this.pictureBox1.Location = new System.Drawing.Point(73, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 145);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.txtnivel.FormattingEnabled = true;
+            this.txtnivel.Location = new System.Drawing.Point(354, 170);
+            this.txtnivel.Name = "txtnivel";
+            this.txtnivel.Size = new System.Drawing.Size(175, 21);
+            this.txtnivel.TabIndex = 17;
             // 
-            // comboBox1
+            // dataSet1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(354, 170);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(175, 21);
-            this.comboBox1.TabIndex = 17;
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usuariosBindingSource
+            // 
+            this.usuariosBindingSource.DataMember = "usuarios";
+            this.usuariosBindingSource.DataSource = this.dataSet1;
+            // 
+            // usuariosTableAdapter
+            // 
+            this.usuariosTableAdapter.ClearBeforeFill = true;
             // 
             // usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 346);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtnivel);
+            this.Controls.Add(this.bactualizar);
+            this.Controls.Add(this.bguardar);
+            this.Controls.Add(this.bsalir);
+            this.Controls.Add(this.bmodificar);
+            this.Controls.Add(this.beliminar);
+            this.Controls.Add(this.bnuevo);
+            this.Controls.Add(this.bultimo);
+            this.Controls.Add(this.bsiguiente);
+            this.Controls.Add(this.banterior);
+            this.Controls.Add(this.bprimero);
+            this.Controls.Add(this.txtclave);
+            this.Controls.Add(this.txtusu);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "usuario";
             this.Text = "usuario";
+            this.Load += new System.EventHandler(this.usuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtusu;
+        private System.Windows.Forms.TextBox txtclave;
+        private System.Windows.Forms.Button bprimero;
+        private System.Windows.Forms.Button banterior;
+        private System.Windows.Forms.Button bsiguiente;
+        private System.Windows.Forms.Button bultimo;
+        private System.Windows.Forms.Button bnuevo;
+        private System.Windows.Forms.Button beliminar;
+        private System.Windows.Forms.Button bmodificar;
+        private System.Windows.Forms.Button bsalir;
+        private System.Windows.Forms.Button bguardar;
+        private System.Windows.Forms.Button bactualizar;
+        private System.Windows.Forms.ComboBox txtnivel;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource usuariosBindingSource;
+        private DataSet1TableAdapters.usuariosTableAdapter usuariosTableAdapter;
     }
 }
