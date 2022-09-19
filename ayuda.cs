@@ -19,6 +19,10 @@ namespace Semena_6___Parcial_1
             InitializeComponent();
         }
 
+
+        string carpeta = Application.StartupPath + @"\carpeta ayuda";
+        string archivo = @"\ayuda.txt";
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -69,6 +73,19 @@ namespace Semena_6___Parcial_1
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ayuda_Load(object sender, EventArgs e)
+        {
+            string ubicacion = carpeta + archivo;
+
+            string leer = System.IO.File.ReadAllText(ubicacion);
+            richTextBox1.Text = leer;
         }
     }
 }

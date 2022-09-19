@@ -118,6 +118,14 @@ namespace Semena_6___Parcial_1
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            menu_principal f1 = new menu_principal();
+            f1.Show();
+            this.Hide();
+
+        }
     }
 }
 

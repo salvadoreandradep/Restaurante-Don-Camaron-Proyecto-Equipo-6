@@ -101,6 +101,7 @@ namespace Semena_6___Parcial_1
             this.richTextBox1.Size = new System.Drawing.Size(360, 252);
             this.richTextBox1.TabIndex = 7;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // ayuda
             // 
@@ -117,6 +118,7 @@ namespace Semena_6___Parcial_1
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ayuda";
             this.Text = "ayuda";
+            this.Load += new System.EventHandler(this.ayuda_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
