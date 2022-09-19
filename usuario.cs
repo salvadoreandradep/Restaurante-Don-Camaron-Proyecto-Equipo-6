@@ -17,6 +17,8 @@ namespace Semena_6___Parcial_1
         public OleDbConnection miconexion;
 
         public string usuario_modificar;
+
+        
         public usuario()
         {
 
@@ -26,9 +28,14 @@ namespace Semena_6___Parcial_1
 
         private void usuario_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'dataSet1.usuarios' Puede moverla o quitarla según sea necesario.
+          
             this.usuariosTableAdapter.Fill(this.dataSet1.usuarios);
-            this.usuariosTableAdapter.Fill(this.DataSet1.usuarios);
+
+            txtusu.Enabled = false;
+            txtclave.Enabled = false;
+            txtnivel.Enabled = false;
+
+            this.usuariosTableAdapter.Fill(this.dataSet1.usuarios);
         }
 
         private void bguardar_Click(object sender, EventArgs e)
@@ -41,8 +48,7 @@ namespace Semena_6___Parcial_1
                 guardar.Connection = miconexion;
                 guardar.CommandType = CommandType.Text;
 
-                guardar.CommandText = "INSERT INTO tusuario ([nombre], [clave],[nivel]) Values('" + txtusu.Text.ToString() + "', '" + 
-txtclave.Text.ToString() + "','" + txtnivel.Text.ToString() + "')";
+                guardar.CommandText = "INSERT INTO usuarios ([usuario], [clave],[nivel]) Values('" + txtusu.Text.ToString() + "', '" + txtclave.Text.ToString() + "','" + txtnivel.Text.ToString() + "')";
 
                 guardar.ExecuteNonQuery();
                 miconexion.Close();
@@ -60,8 +66,8 @@ txtclave.Text.ToString() + "','" + txtnivel.Text.ToString() + "')";
                 MessageBox.Show("Usuario agregado con éxito", "Ok",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                this.tusuarioTableAdapter.Fill(this.sistemaDataSer.tusuario);
-                this.tusuarioBindingSource.MoveLast();
+                this.usuariosTableAdapter.Fill(this.dataSet1.usuarios);
+                this.usuariosBindingSource.MoveLast();
             }
 
             catch (Exception err)
@@ -95,7 +101,7 @@ txtclave.Text.ToString() + "','" + txtnivel.Text.ToString() + "')";
                 string cla = txtclave.Text.ToString();
                 string niv = txtnivel.Text;
 
-                actualizar.CommandText = "UPDATE tusuario SET nombre = '" + nom + "', clave = '" + cla + "',nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar + "'";
+                actualizar.CommandText = "UPDATE tusuario SET usuario = '" + nom + "', clave = '" + cla + "',nivel = '" + niv + "' WHERE usuario = '" + usuario_modificar + "'";
 
               
 
@@ -131,19 +137,18 @@ txtclave.Text.ToString() + "','" + txtnivel.Text.ToString() + "')";
                     eliminar.Connection = miconexion;
                     eliminar.CommandType = CommandType.Text;
 
-                    eliminar.CommandText = "DELETE FROM tusuario WHERE nombre = '" +
+                    eliminar.CommandText = "DELETE FROM tusuario WHERE usuario = '" +
                     txtusu.Text.ToString() + "'";
 
                     eliminar.ExecuteNonQuery();
-                    this.tusuarioBindingSource.MoveNext();
+                    this.usuariosBindingSource.MoveNext();
                     miconexion.Close();
 
-                    //Mensaje que se guardó correctamente 
+                  
                     MessageBox.Show("Usuario eliminado con éxito", "Ok",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    //this.tusuarioTableAdapter.Fill(this.sistemaDataSet.tusuario);  
-                    this.tusuarioBindingSource.MovePrevious();
+                    this.usuariosBindingSource.MovePrevious();
                 }
                 catch (Exception err)
                 {
@@ -154,7 +159,44 @@ txtclave.Text.ToString() + "','" + txtnivel.Text.ToString() + "')";
 
         private void banterior_Click(object sender, EventArgs e)
         {
-            this.tusuarioBindingSource.MovePrevious();
+            this.usuariosBindingSource.MovePrevious();
+        }
+
+        private void bprimero_Click(object sender, EventArgs e)
+        {
+            this.usuariosBindingSource.MoveFirst();
+        }
+
+        private void bsiguiente_Click(object sender, EventArgs e)
+        {
+            this.usuariosBindingSource.MoveNext();
+        }
+
+        private void bultimo_Click(object sender, EventArgs e)
+        {
+            this.usuariosBindingSource.MoveLast();
+        }
+
+        private void bnuevo_Click(object sender, EventArgs e)
+        {
+            bnuevo.Visible = false;
+            bguardar.Visible = true;
+            txtusu.Enabled = true;
+            txtclave.Enabled = true;
+            txtnivel.Enabled = true;
+            txtusu.Text = "";
+            txtclave.Text = "";
+            txtnivel.Text = "Seleccione nivel";
+            txtusu.Focus();
+          
+            
+        }
+
+        private void bsalir_Click(object sender, EventArgs e)
+        {
+            login ll = new login();
+            ll.Show(); 
+            this.Hide();
         }
     }
 }

@@ -127,6 +127,9 @@ namespace Semena_6___Parcial_1
             f1.Show();
             this.Hide();
 
+            sqlnet.Close();
+            conexion.Close();
+
         }
     }
 }

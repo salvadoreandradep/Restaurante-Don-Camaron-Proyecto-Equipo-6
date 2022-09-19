@@ -35,6 +35,8 @@ namespace Semena_6___Parcial_1
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtusu = new System.Windows.Forms.TextBox();
+            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new Semena_6___Parcial_1.DataSet1();
             this.txtclave = new System.Windows.Forms.TextBox();
             this.bprimero = new System.Windows.Forms.Button();
             this.banterior = new System.Windows.Forms.Button();
@@ -47,12 +49,12 @@ namespace Semena_6___Parcial_1
             this.bguardar = new System.Windows.Forms.Button();
             this.bactualizar = new System.Windows.Forms.Button();
             this.txtnivel = new System.Windows.Forms.ComboBox();
-            this.dataSet1 = new Semena_6___Parcial_1.DataSet1();
-            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usuariosTableAdapter = new Semena_6___Parcial_1.DataSet1TableAdapters.usuariosTableAdapter();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -102,7 +104,16 @@ namespace Semena_6___Parcial_1
             this.txtusu.Name = "txtusu";
             this.txtusu.Size = new System.Drawing.Size(175, 20);
             this.txtusu.TabIndex = 4;
-            this.txtusu.Visible = false;
+            // 
+            // usuariosBindingSource
+            // 
+            this.usuariosBindingSource.DataMember = "usuarios";
+            this.usuariosBindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtclave
             // 
@@ -120,6 +131,7 @@ namespace Semena_6___Parcial_1
             this.bprimero.TabIndex = 6;
             this.bprimero.Text = "Primero";
             this.bprimero.UseVisualStyleBackColor = true;
+            this.bprimero.Click += new System.EventHandler(this.bprimero_Click);
             // 
             // banterior
             // 
@@ -139,6 +151,7 @@ namespace Semena_6___Parcial_1
             this.bsiguiente.TabIndex = 8;
             this.bsiguiente.Text = "Siguiente";
             this.bsiguiente.UseVisualStyleBackColor = true;
+            this.bsiguiente.Click += new System.EventHandler(this.bsiguiente_Click);
             // 
             // bultimo
             // 
@@ -148,6 +161,7 @@ namespace Semena_6___Parcial_1
             this.bultimo.TabIndex = 9;
             this.bultimo.Text = "Ultimo";
             this.bultimo.UseVisualStyleBackColor = true;
+            this.bultimo.Click += new System.EventHandler(this.bultimo_Click);
             // 
             // bnuevo
             // 
@@ -157,6 +171,7 @@ namespace Semena_6___Parcial_1
             this.bnuevo.TabIndex = 10;
             this.bnuevo.Text = "Nuevo";
             this.bnuevo.UseVisualStyleBackColor = true;
+            this.bnuevo.Click += new System.EventHandler(this.bnuevo_Click);
             // 
             // beliminar
             // 
@@ -186,6 +201,7 @@ namespace Semena_6___Parcial_1
             this.bsalir.TabIndex = 13;
             this.bsalir.Text = "Salir";
             this.bsalir.UseVisualStyleBackColor = true;
+            this.bsalir.Click += new System.EventHandler(this.bsalir_Click);
             // 
             // bguardar
             // 
@@ -195,6 +211,7 @@ namespace Semena_6___Parcial_1
             this.bguardar.TabIndex = 14;
             this.bguardar.Text = "Guardar";
             this.bguardar.UseVisualStyleBackColor = true;
+            this.bguardar.Visible = false;
             this.bguardar.Click += new System.EventHandler(this.bguardar_Click);
             // 
             // bactualizar
@@ -205,35 +222,37 @@ namespace Semena_6___Parcial_1
             this.bactualizar.TabIndex = 16;
             this.bactualizar.Text = "Actualizar";
             this.bactualizar.UseVisualStyleBackColor = true;
+            this.bactualizar.Visible = false;
             this.bactualizar.Click += new System.EventHandler(this.bactualizar_Click);
             // 
             // txtnivel
             // 
+            this.txtnivel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "nivel", true));
             this.txtnivel.FormattingEnabled = true;
             this.txtnivel.Location = new System.Drawing.Point(354, 170);
             this.txtnivel.Name = "txtnivel";
             this.txtnivel.Size = new System.Drawing.Size(175, 21);
             this.txtnivel.TabIndex = 17;
             // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usuariosBindingSource
-            // 
-            this.usuariosBindingSource.DataMember = "usuarios";
-            this.usuariosBindingSource.DataSource = this.dataSet1;
-            // 
             // usuariosTableAdapter
             // 
             this.usuariosTableAdapter.ClearBeforeFill = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.DarkOrange;
+            this.pictureBox2.Location = new System.Drawing.Point(-4, -2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(677, 31);
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
             // 
             // usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 346);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtnivel);
             this.Controls.Add(this.bactualizar);
             this.Controls.Add(this.bguardar);
@@ -251,12 +270,15 @@ namespace Semena_6___Parcial_1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "usuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "usuario";
             this.Load += new System.EventHandler(this.usuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,5 +306,6 @@ namespace Semena_6___Parcial_1
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource usuariosBindingSource;
         private DataSet1TableAdapters.usuariosTableAdapter usuariosTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
