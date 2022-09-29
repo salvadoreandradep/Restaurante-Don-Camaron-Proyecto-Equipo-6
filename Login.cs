@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Data.SqlClient;
-
+using MySql.Data;
+using MySql.Data.MySqlClient;
 namespace Semena_6___Parcial_1
 {
+
+   
     public partial class login : Form
     {
-
+        public string conexionmysql = "Database=login;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5";
         SqlConnection sqlnet = new SqlConnection("Data Source=DESKTOP-APECPOJ;Initial Catalog=login;Integrated Security=True");
         OleDbConnection conexion = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\salva\OneDrive\Escritorio\basededatosaccess\Database1.mdb");
         public login()
@@ -29,7 +32,8 @@ namespace Semena_6___Parcial_1
         {
             try
             {
-
+                
+                
                 sqlnet.Open();
                 conexion.Open();
                 MessageBox.Show("Se ha conectado a los servidores de manera exitosa");

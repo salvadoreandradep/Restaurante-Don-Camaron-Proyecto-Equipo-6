@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 
 namespace Semena_6___Parcial_1
 {
@@ -18,17 +21,17 @@ namespace Semena_6___Parcial_1
 
         public string usuario_modificar;
 
-        
+        public string cadena_conexion = "Database=login;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5";
         public usuario()
         {
-
+            
             miconexion = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\salva\OneDrive\Escritorio\basededatosaccess\Database1.mdb");
             InitializeComponent();
         }
 
         private void usuario_Load(object sender, EventArgs e)
         {
-          
+
             this.usuariosTableAdapter.Fill(this.dataSet1.usuarios);
 
             txtusu.Enabled = false;
@@ -36,44 +39,66 @@ namespace Semena_6___Parcial_1
             txtnivel.Enabled = false;
 
             this.usuariosTableAdapter.Fill(this.dataSet1.usuarios);
+            try
+            {
+                string consulta = "select * from usuario";
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                comando.Fill(ds, "login");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "login";
+            }
+            catch (MySqlException)
+            {
+
+                MessageBox.Show("Error de conexion", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } 
+        
         }
 
         private void bguardar_Click(object sender, EventArgs e)
         {
             try
             {
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+                string myInsertQuery = "INSERT INTO usuario(usuario,clave,nivel) Values(?usuario,?clave,?nivel)";
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
-                OleDbCommand guardar = new OleDbCommand();
-                miconexion.Open();
-                guardar.Connection = miconexion;
-                guardar.CommandType = CommandType.Text;
+                myCommand.Parameters.Add("?nusuario", MySqlDbType.VarChar, 40).Value = txtusu.Text;
+                myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 45).Value = txtclave.Text;
+                myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 4).Value = txtnivel.Text;
 
-                guardar.CommandText = "INSERT INTO usuarios ([usuario], [clave],[nivel]) Values('" + txtusu.Text.ToString() + "', '" + txtclave.Text.ToString() + "','" + txtnivel.Text.ToString() + "')";
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
 
-                guardar.ExecuteNonQuery();
-                miconexion.Close();
+                MessageBox.Show("Usuario agregado con éxito", "Ok", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
 
-                bnuevo.Visible = true;
-                bguardar.Visible = false;
+                string consulta = "select * from usuario";
 
-                 
-                txtusu.Enabled = false;
-                txtclave.Enabled = false;
-                txtnivel.Enabled = false;
-                bnuevo.Focus();
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "login");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "login";
 
-                
-                MessageBox.Show("Usuario agregado con éxito", "Ok",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                this.usuariosTableAdapter.Fill(this.dataSet1.usuarios);
-                this.usuariosBindingSource.MoveLast();
             }
-
-            catch (Exception err)
+            catch (MySqlException)
             {
-                MessageBox.Show(err.Message);
+                MessageBox.Show("Ya existe el usuario", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            bnuevo.Visible = true;
+            bguardar.Visible = false;
+
+            //Desabilitar campos, se activan al crear nuevo registro 
+            txtusu.Enabled = false;
+            txtclave.Enabled = false;
+            txtnivel.Enabled = false;
+            bnuevo.Focus();
+
         }
 
         private void bmodificar_Click(object sender, EventArgs e)
