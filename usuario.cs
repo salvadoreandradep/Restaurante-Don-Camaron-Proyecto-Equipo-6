@@ -21,7 +21,7 @@ namespace Semena_6___Parcial_1
 
         public string usuario_modificar;
 
-        public string cadena_conexion = "Database=login;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5";
+        public string cadena_conexion = @"Database=login;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5";
         public usuario()
         {
             

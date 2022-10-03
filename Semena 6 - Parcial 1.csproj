@@ -112,6 +112,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dgvsistems.cs" />
     <Compile Include="empleados.cs">
       <SubType>Form</SubType>
     </Compile>
