@@ -31,5 +31,10 @@ namespace Semena_6___Parcial_1
         {
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

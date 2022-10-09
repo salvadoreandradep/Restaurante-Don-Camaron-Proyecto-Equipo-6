@@ -46,6 +46,14 @@ namespace Semena_6___Parcial_1
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dui = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha_de_nacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dirección = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -80,7 +88,7 @@ namespace Semena_6___Parcial_1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(246, 59);
+            this.label2.Location = new System.Drawing.Point(164, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 4;
@@ -89,7 +97,7 @@ namespace Semena_6___Parcial_1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(246, 109);
+            this.label3.Location = new System.Drawing.Point(443, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 5;
@@ -98,7 +106,7 @@ namespace Semena_6___Parcial_1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(246, 155);
+            this.label4.Location = new System.Drawing.Point(164, 128);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 13);
             this.label4.TabIndex = 6;
@@ -107,7 +115,7 @@ namespace Semena_6___Parcial_1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(246, 246);
+            this.label5.Location = new System.Drawing.Point(136, 165);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 7;
@@ -116,7 +124,7 @@ namespace Semena_6___Parcial_1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(246, 201);
+            this.label6.Location = new System.Drawing.Point(373, 129);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 13);
             this.label6.TabIndex = 8;
@@ -125,11 +133,12 @@ namespace Semena_6___Parcial_1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(246, 291);
+            this.label7.Location = new System.Drawing.Point(333, 168);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 13);
+            this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 9;
-            this.label7.Text = "DIRRECCION";
+            this.label7.Text = "DIRECCION";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -143,7 +152,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(307, 59);
+            this.textBox1.Location = new System.Drawing.Point(225, 64);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(202, 20);
@@ -151,7 +160,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(311, 106);
+            this.textBox2.Location = new System.Drawing.Point(508, 64);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(198, 20);
@@ -159,7 +168,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(287, 152);
+            this.textBox3.Location = new System.Drawing.Point(205, 125);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(114, 20);
@@ -167,7 +176,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(311, 246);
+            this.textBox4.Location = new System.Drawing.Point(201, 165);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(116, 20);
@@ -175,15 +184,15 @@ namespace Semena_6___Parcial_1
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(326, 288);
+            this.textBox5.Location = new System.Drawing.Point(405, 165);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(383, 65);
+            this.textBox5.Size = new System.Drawing.Size(326, 32);
             this.textBox5.TabIndex = 15;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(382, 200);
+            this.dateTimePicker1.Location = new System.Drawing.Point(509, 128);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 16;
@@ -198,11 +207,65 @@ namespace Semena_6___Parcial_1
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nombre,
+            this.Apellido,
+            this.Dui,
+            this.Telefono,
+            this.Fecha_de_nacimiento,
+            this.Dirección});
+            this.dataGridView1.Location = new System.Drawing.Point(88, 246);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(643, 192);
+            this.dataGridView1.TabIndex = 18;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
+            // 
+            // Dui
+            // 
+            this.Dui.HeaderText = "Dui";
+            this.Dui.Name = "Dui";
+            this.Dui.ReadOnly = true;
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            this.Telefono.ReadOnly = true;
+            // 
+            // Fecha_de_nacimiento
+            // 
+            this.Fecha_de_nacimiento.HeaderText = "Fecha_de_nacimiento";
+            this.Fecha_de_nacimiento.Name = "Fecha_de_nacimiento";
+            this.Fecha_de_nacimiento.ReadOnly = true;
+            // 
+            // Dirección
+            // 
+            this.Dirección.HeaderText = "Dirección";
+            this.Dirección.Name = "Dirección";
+            this.Dirección.ReadOnly = true;
+            // 
             // clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox5);
@@ -223,6 +286,7 @@ namespace Semena_6___Parcial_1
             this.Name = "clientes";
             this.Text = "clientes";
             this.Load += new System.EventHandler(this.clientes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +311,12 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dui;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_de_nacimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dirección;
     }
 }
