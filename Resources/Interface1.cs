@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Semena_6___Parcial_1
+namespace Semena_6___Parcial_1.Resources
 {
-    class Pedido1
+    interface Interface1
     {
     }
 }

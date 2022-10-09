@@ -143,9 +143,9 @@
     <Compile Include="menu_principal.Designer.cs">
       <DependentUpon>menu_principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pedido1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Interface1.cs" />
     <Compile Include="usuario.cs">
       <SubType>Form</SubType>
     </Compile>
