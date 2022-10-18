@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace Semena_6___Parcial_1
 {
-    public partial class bocadillos : Form
+    public partial class ugb : Form
     {
-        public bocadillos()
+        public ugb()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            participa pa = new participa();
+            pa.Show();
         }
     }
 }

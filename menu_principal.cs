@@ -31,40 +31,10 @@ namespace Semena_6___Parcial_1
 
         private void combo1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            combo1 cc = new combo1();
-            cc.Show();
+         
         }
 
-        private void combo2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-            combo2 c2 = new combo2();
-            c2.Show();
-        }
-
-        private void combo3ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            combo3 c3 = new combo3();
-            c3.Show();
-        }
-
-        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fatura f1 = new fatura();
-            f1.ShowDialog();
-        }
-
-        private void heladosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            helado h1 = new helado();
-            h1.Show();
-        }
-
-        private void bocadillosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            bocadillos bb = new bocadillos();
-            bb.Show();
-        }
 
         private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -93,6 +63,29 @@ namespace Semena_6___Parcial_1
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            combo1 cc = new combo1();
+            cc.Show();
+        }
+
+        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Pedidos pc = new Pedidos();
+            pc.Show();
+        }
+
+        private void uGBVErdeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           ugb ugb = new ugb();
+            ugb.Show();
         }
     }
 }

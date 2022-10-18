@@ -29,9 +29,6 @@ namespace Semena_6___Parcial_1
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,50 +42,24 @@ namespace Semena_6___Parcial_1
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dui = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha_de_nacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dirección = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bactualizar = new System.Windows.Forms.Button();
+            this.bguardar = new System.Windows.Forms.Button();
+            this.bsalir = new System.Windows.Forms.Button();
+            this.bmodificar = new System.Windows.Forms.Button();
+            this.beliminar = new System.Windows.Forms.Button();
+            this.bnuevo = new System.Windows.Forms.Button();
+            this.bultimo = new System.Windows.Forms.Button();
+            this.bsiguiente = new System.Windows.Forms.Button();
+            this.banterior = new System.Windows.Forms.Button();
+            this.bprimero = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ACCIONES";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(31, 155);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "BORRAR";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(31, 201);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "LISTA";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(164, 64);
+            this.label2.Location = new System.Drawing.Point(27, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 4;
@@ -97,7 +68,7 @@ namespace Semena_6___Parcial_1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(443, 67);
+            this.label3.Location = new System.Drawing.Point(333, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 5;
@@ -106,7 +77,7 @@ namespace Semena_6___Parcial_1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(164, 128);
+            this.label4.Location = new System.Drawing.Point(55, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 13);
             this.label4.TabIndex = 6;
@@ -115,7 +86,7 @@ namespace Semena_6___Parcial_1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(136, 165);
+            this.label5.Location = new System.Drawing.Point(17, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 7;
@@ -124,7 +95,7 @@ namespace Semena_6___Parcial_1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(373, 129);
+            this.label6.Location = new System.Drawing.Point(263, 124);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 13);
             this.label6.TabIndex = 8;
@@ -133,7 +104,7 @@ namespace Semena_6___Parcial_1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(333, 168);
+            this.label7.Location = new System.Drawing.Point(326, 167);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 9;
@@ -152,7 +123,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(225, 64);
+            this.textBox1.Location = new System.Drawing.Point(91, 59);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(202, 20);
@@ -160,7 +131,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(508, 64);
+            this.textBox2.Location = new System.Drawing.Point(398, 59);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(198, 20);
@@ -168,7 +139,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(205, 125);
+            this.textBox3.Location = new System.Drawing.Point(91, 120);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(114, 20);
@@ -176,7 +147,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(201, 165);
+            this.textBox4.Location = new System.Drawing.Point(91, 160);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(116, 20);
@@ -184,7 +155,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(405, 165);
+            this.textBox5.Location = new System.Drawing.Point(398, 163);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(326, 32);
@@ -192,81 +163,129 @@ namespace Semena_6___Parcial_1
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(509, 128);
+            this.dateTimePicker1.Location = new System.Drawing.Point(399, 123);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 16;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(31, 109);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "GUARDAR";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre,
-            this.Apellido,
-            this.Dui,
-            this.Telefono,
-            this.Fecha_de_nacimiento,
-            this.Dirección});
-            this.dataGridView1.Location = new System.Drawing.Point(88, 246);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 332);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(643, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(731, 279);
             this.dataGridView1.TabIndex = 18;
             // 
-            // Nombre
+            // bactualizar
             // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
+            this.bactualizar.Location = new System.Drawing.Point(202, 279);
+            this.bactualizar.Name = "bactualizar";
+            this.bactualizar.Size = new System.Drawing.Size(75, 23);
+            this.bactualizar.TabIndex = 46;
+            this.bactualizar.Text = "Actualizar";
+            this.bactualizar.UseVisualStyleBackColor = true;
+            this.bactualizar.Visible = false;
             // 
-            // Apellido
+            // bguardar
             // 
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.Name = "Apellido";
-            this.Apellido.ReadOnly = true;
+            this.bguardar.Location = new System.Drawing.Point(30, 279);
+            this.bguardar.Name = "bguardar";
+            this.bguardar.Size = new System.Drawing.Size(75, 23);
+            this.bguardar.TabIndex = 45;
+            this.bguardar.Text = "Guardar";
+            this.bguardar.UseVisualStyleBackColor = true;
+            this.bguardar.Visible = false;
             // 
-            // Dui
+            // bsalir
             // 
-            this.Dui.HeaderText = "Dui";
-            this.Dui.Name = "Dui";
-            this.Dui.ReadOnly = true;
+            this.bsalir.Location = new System.Drawing.Point(286, 249);
+            this.bsalir.Name = "bsalir";
+            this.bsalir.Size = new System.Drawing.Size(75, 23);
+            this.bsalir.TabIndex = 44;
+            this.bsalir.Text = "Salir";
+            this.bsalir.UseVisualStyleBackColor = true;
             // 
-            // Telefono
+            // bmodificar
             // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-            this.Telefono.ReadOnly = true;
+            this.bmodificar.Location = new System.Drawing.Point(202, 249);
+            this.bmodificar.Name = "bmodificar";
+            this.bmodificar.Size = new System.Drawing.Size(75, 23);
+            this.bmodificar.TabIndex = 43;
+            this.bmodificar.Text = "Modificar";
+            this.bmodificar.UseVisualStyleBackColor = true;
             // 
-            // Fecha_de_nacimiento
+            // beliminar
             // 
-            this.Fecha_de_nacimiento.HeaderText = "Fecha_de_nacimiento";
-            this.Fecha_de_nacimiento.Name = "Fecha_de_nacimiento";
-            this.Fecha_de_nacimiento.ReadOnly = true;
+            this.beliminar.Location = new System.Drawing.Point(115, 249);
+            this.beliminar.Name = "beliminar";
+            this.beliminar.Size = new System.Drawing.Size(75, 23);
+            this.beliminar.TabIndex = 42;
+            this.beliminar.Text = "Eliminar";
+            this.beliminar.UseVisualStyleBackColor = true;
             // 
-            // Dirección
+            // bnuevo
             // 
-            this.Dirección.HeaderText = "Dirección";
-            this.Dirección.Name = "Dirección";
-            this.Dirección.ReadOnly = true;
+            this.bnuevo.Location = new System.Drawing.Point(30, 249);
+            this.bnuevo.Name = "bnuevo";
+            this.bnuevo.Size = new System.Drawing.Size(75, 23);
+            this.bnuevo.TabIndex = 41;
+            this.bnuevo.Text = "Nuevo";
+            this.bnuevo.UseVisualStyleBackColor = true;
+            // 
+            // bultimo
+            // 
+            this.bultimo.Location = new System.Drawing.Point(286, 218);
+            this.bultimo.Name = "bultimo";
+            this.bultimo.Size = new System.Drawing.Size(75, 23);
+            this.bultimo.TabIndex = 40;
+            this.bultimo.Text = "Ultimo";
+            this.bultimo.UseVisualStyleBackColor = true;
+            // 
+            // bsiguiente
+            // 
+            this.bsiguiente.Location = new System.Drawing.Point(202, 217);
+            this.bsiguiente.Name = "bsiguiente";
+            this.bsiguiente.Size = new System.Drawing.Size(75, 23);
+            this.bsiguiente.TabIndex = 39;
+            this.bsiguiente.Text = "Siguiente";
+            this.bsiguiente.UseVisualStyleBackColor = true;
+            // 
+            // banterior
+            // 
+            this.banterior.Location = new System.Drawing.Point(115, 217);
+            this.banterior.Name = "banterior";
+            this.banterior.Size = new System.Drawing.Size(75, 23);
+            this.banterior.TabIndex = 38;
+            this.banterior.Text = "Anterior";
+            this.banterior.UseVisualStyleBackColor = true;
+            // 
+            // bprimero
+            // 
+            this.bprimero.Location = new System.Drawing.Point(30, 217);
+            this.bprimero.Name = "bprimero";
+            this.bprimero.Size = new System.Drawing.Size(75, 23);
+            this.bprimero.TabIndex = 37;
+            this.bprimero.Text = "Primero";
+            this.bprimero.UseVisualStyleBackColor = true;
             // 
             // clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Orange;
+            this.ClientSize = new System.Drawing.Size(800, 632);
+            this.Controls.Add(this.bactualizar);
+            this.Controls.Add(this.bguardar);
+            this.Controls.Add(this.bsalir);
+            this.Controls.Add(this.bmodificar);
+            this.Controls.Add(this.beliminar);
+            this.Controls.Add(this.bnuevo);
+            this.Controls.Add(this.bultimo);
+            this.Controls.Add(this.bsiguiente);
+            this.Controls.Add(this.banterior);
+            this.Controls.Add(this.bprimero);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -280,9 +299,6 @@ namespace Semena_6___Parcial_1
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
             this.Name = "clientes";
             this.Text = "clientes";
             this.Load += new System.EventHandler(this.clientes_Load);
@@ -293,10 +309,6 @@ namespace Semena_6___Parcial_1
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -310,13 +322,16 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dui;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_de_nacimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dirección;
+        private System.Windows.Forms.Button bactualizar;
+        private System.Windows.Forms.Button bguardar;
+        private System.Windows.Forms.Button bsalir;
+        private System.Windows.Forms.Button bmodificar;
+        private System.Windows.Forms.Button beliminar;
+        private System.Windows.Forms.Button bnuevo;
+        private System.Windows.Forms.Button bultimo;
+        private System.Windows.Forms.Button bsiguiente;
+        private System.Windows.Forms.Button banterior;
+        private System.Windows.Forms.Button bprimero;
     }
 }

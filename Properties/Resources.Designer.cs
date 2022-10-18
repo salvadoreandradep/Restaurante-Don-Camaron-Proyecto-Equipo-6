@@ -73,6 +73,16 @@ namespace Semena_6___Parcial_1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _242387747_4669179146425781_4732178891688151179_n {
+            get {
+                object obj = ResourceManager.GetObject("_242387747_4669179146425781_4732178891688151179_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _301e96a5826fb26ce858e5cedbdea89a {
             get {
                 object obj = ResourceManager.GetObject("_301e96a5826fb26ce858e5cedbdea89a", resourceCulture);
@@ -166,6 +176,16 @@ namespace Semena_6___Parcial_1.Properties {
         internal static System.Drawing.Bitmap cc {
             get {
                 object obj = ResourceManager.GetObject("cc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga {
+            get {
+                object obj = ResourceManager.GetObject("descarga", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,6 +293,16 @@ namespace Semena_6___Parcial_1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maxresdefault {
+            get {
+                object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sin_fondo {
             get {
                 object obj = ResourceManager.GetObject("sin fondo", resourceCulture);
@@ -316,6 +346,16 @@ namespace Semena_6___Parcial_1.Properties {
         internal static System.Drawing.Bitmap user3 {
             get {
                 object obj = ResourceManager.GetObject("user3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zzzz {
+            get {
+                object obj = ResourceManager.GetObject("zzzz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Semena_6___Parcial_1
 {
-    public partial class combo2 : Form
+    public partial class participa : Form
     {
-        public combo2()
+        public participa()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
