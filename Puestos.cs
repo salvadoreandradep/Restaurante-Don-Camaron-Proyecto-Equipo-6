@@ -71,5 +71,10 @@ namespace Semena_6___Parcial_1
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
