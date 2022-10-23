@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Semena_6___Parcial_1
 {
-    public partial class Vitacora : Form
+    public partial class Bitacora : Form
     {
-        public Vitacora()
+        public Bitacora()
         {
             InitializeComponent();
         }

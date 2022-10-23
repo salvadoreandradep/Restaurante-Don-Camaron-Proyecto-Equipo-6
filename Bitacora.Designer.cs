@@ -1,7 +1,7 @@
 ﻿
 namespace Semena_6___Parcial_1
 {
-    partial class Vitacora
+    partial class Bitacora
     {
         /// <summary>
         /// Required designer variable.
