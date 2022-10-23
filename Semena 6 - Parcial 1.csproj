@@ -101,6 +101,7 @@
     <Compile Include="empleados.Designer.cs">
       <DependentUpon>empleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface1.cs" />
     <Compile Include="participa.cs">
       <SubType>Form</SubType>
     </Compile>
