@@ -160,6 +160,9 @@
     <EmbeddedResource Include="ayuda.resx">
       <DependentUpon>ayuda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora.resx">
+      <DependentUpon>Bitacora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="clientes.resx">
       <DependentUpon>clientes.cs</DependentUpon>
     </EmbeddedResource>
