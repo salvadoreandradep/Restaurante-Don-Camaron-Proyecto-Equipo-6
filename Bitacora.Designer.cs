@@ -116,7 +116,7 @@ namespace Semena_6___Parcial_1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(318, 128);
+            this.label7.Location = new System.Drawing.Point(327, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 25);
             this.label7.TabIndex = 6;
@@ -158,7 +158,7 @@ namespace Semena_6___Parcial_1
             // 
             this.textBox5.Location = new System.Drawing.Point(569, 32);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 20);
+            this.textBox5.Size = new System.Drawing.Size(189, 20);
             this.textBox5.TabIndex = 11;
             // 
             // textBox6
@@ -271,6 +271,7 @@ namespace Semena_6___Parcial_1
             this.Name = "Bitacora";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Bitácora";
+            this.Load += new System.EventHandler(this.Bitacora_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
