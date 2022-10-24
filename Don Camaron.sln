@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semena 6 - Parcial 1", "Semena 6 - Parcial 1.csproj", "{5FD09C81-AFC2-4AE0-B26C-F0584374146D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Don Camaron Restaurante", "Don Camaron Restaurante.csproj", "{5FD09C81-AFC2-4AE0-B26C-F0584374146D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

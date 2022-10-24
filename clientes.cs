@@ -56,5 +56,33 @@ namespace Semena_6___Parcial_1
         {
 
         }
+
+      
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Creado el dato en la tabla Clientes");
+        }
+
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha guardado el dato en la tabla Clientes");
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Modificado el dato en la tabla Clientes");
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Eliminado el dato en la tabla Clientes");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

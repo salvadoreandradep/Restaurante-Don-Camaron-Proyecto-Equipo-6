@@ -74,7 +74,22 @@ namespace Semena_6___Parcial_1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Se ha Modificado el dato en la tabla Puestos");
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Creado el dato en la tabla Puestos");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha guardado el dato en la tabla Puestos");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Eliminado el dato en la tabla Puestos");
         }
     }
 }

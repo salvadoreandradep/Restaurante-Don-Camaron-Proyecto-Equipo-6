@@ -38,8 +38,10 @@ namespace Semena_6___Parcial_1
             this.acerdaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.uGBVErdeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.puestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +52,8 @@ namespace Semena_6___Parcial_1
             this.menuToolStripMenuItem,
             this.clientesToolStripMenuItem,
             this.empleadosToolStripMenuItem,
+            this.puestosToolStripMenuItem,
+            this.bitacoraToolStripMenuItem,
             this.pedidosToolStripMenuItem,
             this.acerdaDeToolStripMenuItem,
             this.ayudaToolStripMenuItem,
@@ -110,6 +114,13 @@ namespace Semena_6___Parcial_1
             this.salirToolStripMenuItem.Text = "Cerrar Sesion";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
+            // uGBVErdeToolStripMenuItem
+            // 
+            this.uGBVErdeToolStripMenuItem.Name = "uGBVErdeToolStripMenuItem";
+            this.uGBVErdeToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.uGBVErdeToolStripMenuItem.Text = "UGB Verde";
+            this.uGBVErdeToolStripMenuItem.Click += new System.EventHandler(this.uGBVErdeToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Semena_6___Parcial_1.Properties.Resources._301e96a5826fb26ce858e5cedbdea89a;
@@ -120,12 +131,19 @@ namespace Semena_6___Parcial_1
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // uGBVErdeToolStripMenuItem
+            // bitacoraToolStripMenuItem
             // 
-            this.uGBVErdeToolStripMenuItem.Name = "uGBVErdeToolStripMenuItem";
-            this.uGBVErdeToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.uGBVErdeToolStripMenuItem.Text = "UGB Verde";
-            this.uGBVErdeToolStripMenuItem.Click += new System.EventHandler(this.uGBVErdeToolStripMenuItem_Click);
+            this.bitacoraToolStripMenuItem.Name = "bitacoraToolStripMenuItem";
+            this.bitacoraToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.bitacoraToolStripMenuItem.Text = "Bitacora";
+            this.bitacoraToolStripMenuItem.Click += new System.EventHandler(this.bitacoraToolStripMenuItem_Click);
+            // 
+            // puestosToolStripMenuItem
+            // 
+            this.puestosToolStripMenuItem.Name = "puestosToolStripMenuItem";
+            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.puestosToolStripMenuItem.Text = "Puestos";
+            this.puestosToolStripMenuItem.Click += new System.EventHandler(this.puestosToolStripMenuItem_Click);
             // 
             // menu_principal
             // 
@@ -160,5 +178,7 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uGBVErdeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bitacoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem puestosToolStripMenuItem;
     }
 }

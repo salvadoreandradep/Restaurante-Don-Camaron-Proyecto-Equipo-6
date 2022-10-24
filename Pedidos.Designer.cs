@@ -40,16 +40,11 @@ namespace Semena_6___Parcial_1
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bactualizar = new System.Windows.Forms.Button();
-            this.bguardar = new System.Windows.Forms.Button();
-            this.bsalir = new System.Windows.Forms.Button();
-            this.bmodificar = new System.Windows.Forms.Button();
-            this.beliminar = new System.Windows.Forms.Button();
-            this.bnuevo = new System.Windows.Forms.Button();
-            this.bultimo = new System.Windows.Forms.Button();
-            this.bsiguiente = new System.Windows.Forms.Button();
-            this.banterior = new System.Windows.Forms.Button();
-            this.bprimero = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,97 +142,60 @@ namespace Semena_6___Parcial_1
             this.dataGridView1.Size = new System.Drawing.Size(670, 150);
             this.dataGridView1.TabIndex = 10;
             // 
-            // bactualizar
+            // button5
             // 
-            this.bactualizar.Location = new System.Drawing.Point(575, 227);
-            this.bactualizar.Name = "bactualizar";
-            this.bactualizar.Size = new System.Drawing.Size(75, 23);
-            this.bactualizar.TabIndex = 46;
-            this.bactualizar.Text = "Actualizar";
-            this.bactualizar.UseVisualStyleBackColor = true;
-            this.bactualizar.Visible = false;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(644, 219);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(99, 34);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "Salir";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // bguardar
+            // button4
             // 
-            this.bguardar.Location = new System.Drawing.Point(403, 227);
-            this.bguardar.Name = "bguardar";
-            this.bguardar.Size = new System.Drawing.Size(75, 23);
-            this.bguardar.TabIndex = 45;
-            this.bguardar.Text = "Guardar";
-            this.bguardar.UseVisualStyleBackColor = true;
-            this.bguardar.Visible = false;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(505, 219);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(99, 34);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // bsalir
+            // button3
             // 
-            this.bsalir.Location = new System.Drawing.Point(659, 197);
-            this.bsalir.Name = "bsalir";
-            this.bsalir.Size = new System.Drawing.Size(75, 23);
-            this.bsalir.TabIndex = 44;
-            this.bsalir.Text = "Salir";
-            this.bsalir.UseVisualStyleBackColor = true;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(358, 219);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 34);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Modificar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // bmodificar
+            // button2
             // 
-            this.bmodificar.Location = new System.Drawing.Point(575, 197);
-            this.bmodificar.Name = "bmodificar";
-            this.bmodificar.Size = new System.Drawing.Size(75, 23);
-            this.bmodificar.TabIndex = 43;
-            this.bmodificar.Text = "Modificar";
-            this.bmodificar.UseVisualStyleBackColor = true;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(211, 219);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 34);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // beliminar
+            // button1
             // 
-            this.beliminar.Location = new System.Drawing.Point(488, 197);
-            this.beliminar.Name = "beliminar";
-            this.beliminar.Size = new System.Drawing.Size(75, 23);
-            this.beliminar.TabIndex = 42;
-            this.beliminar.Text = "Eliminar";
-            this.beliminar.UseVisualStyleBackColor = true;
-            // 
-            // bnuevo
-            // 
-            this.bnuevo.Location = new System.Drawing.Point(403, 197);
-            this.bnuevo.Name = "bnuevo";
-            this.bnuevo.Size = new System.Drawing.Size(75, 23);
-            this.bnuevo.TabIndex = 41;
-            this.bnuevo.Text = "Nuevo";
-            this.bnuevo.UseVisualStyleBackColor = true;
-            // 
-            // bultimo
-            // 
-            this.bultimo.Location = new System.Drawing.Point(659, 166);
-            this.bultimo.Name = "bultimo";
-            this.bultimo.Size = new System.Drawing.Size(75, 23);
-            this.bultimo.TabIndex = 40;
-            this.bultimo.Text = "Ultimo";
-            this.bultimo.UseVisualStyleBackColor = true;
-            // 
-            // bsiguiente
-            // 
-            this.bsiguiente.Location = new System.Drawing.Point(575, 165);
-            this.bsiguiente.Name = "bsiguiente";
-            this.bsiguiente.Size = new System.Drawing.Size(75, 23);
-            this.bsiguiente.TabIndex = 39;
-            this.bsiguiente.Text = "Siguiente";
-            this.bsiguiente.UseVisualStyleBackColor = true;
-            // 
-            // banterior
-            // 
-            this.banterior.Location = new System.Drawing.Point(488, 165);
-            this.banterior.Name = "banterior";
-            this.banterior.Size = new System.Drawing.Size(75, 23);
-            this.banterior.TabIndex = 38;
-            this.banterior.Text = "Anterior";
-            this.banterior.UseVisualStyleBackColor = true;
-            // 
-            // bprimero
-            // 
-            this.bprimero.Location = new System.Drawing.Point(403, 165);
-            this.bprimero.Name = "bprimero";
-            this.bprimero.Size = new System.Drawing.Size(75, 23);
-            this.bprimero.TabIndex = 37;
-            this.bprimero.Text = "Primero";
-            this.bprimero.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(85, 219);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 34);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Nuevo";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Pedidos
             // 
@@ -245,16 +203,11 @@ namespace Semena_6___Parcial_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bactualizar);
-            this.Controls.Add(this.bguardar);
-            this.Controls.Add(this.bsalir);
-            this.Controls.Add(this.bmodificar);
-            this.Controls.Add(this.beliminar);
-            this.Controls.Add(this.bnuevo);
-            this.Controls.Add(this.bultimo);
-            this.Controls.Add(this.bsiguiente);
-            this.Controls.Add(this.banterior);
-            this.Controls.Add(this.bprimero);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -288,15 +241,10 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button bactualizar;
-        private System.Windows.Forms.Button bguardar;
-        private System.Windows.Forms.Button bsalir;
-        private System.Windows.Forms.Button bmodificar;
-        private System.Windows.Forms.Button beliminar;
-        private System.Windows.Forms.Button bnuevo;
-        private System.Windows.Forms.Button bultimo;
-        private System.Windows.Forms.Button bsiguiente;
-        private System.Windows.Forms.Button banterior;
-        private System.Windows.Forms.Button bprimero;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

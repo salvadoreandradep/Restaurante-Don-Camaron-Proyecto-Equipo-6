@@ -12,12 +12,12 @@ using MySql.Data.MySqlClient;
 
 namespace Semena_6___Parcial_1
 {
-    public partial class combo1 : Form
+    public partial class Productos : Form
     {
 
 
         public string cadena_conexion = @"Database=login;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5";
-        public combo1()
+        public Productos()
         {
             InitializeComponent();
         }
@@ -41,6 +41,36 @@ namespace Semena_6___Parcial_1
                 MessageBox.Show("Error de conexion", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha creado el dato en la tabla Productos");
+        }
+
+     
+
+      
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha guardado el dato en la tabla Productos");
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Modificado el dato en la tabla Productos");
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Eliminado el dato en la tabla Productos");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
     }

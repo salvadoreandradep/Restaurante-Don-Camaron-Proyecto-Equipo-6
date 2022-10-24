@@ -72,7 +72,7 @@ namespace Semena_6___Parcial_1
 
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            combo1 cc = new combo1();
+            Productos cc = new Productos();
             cc.Show();
         }
 
@@ -86,6 +86,18 @@ namespace Semena_6___Parcial_1
         {
            ugb ugb = new ugb();
             ugb.Show();
+        }
+
+        private void bitacoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bitacora bb = new Bitacora();
+            bb.Show();
+        }
+
+        private void puestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Puestos pp = new Puestos();
+            pp.Show();
         }
     }
 }

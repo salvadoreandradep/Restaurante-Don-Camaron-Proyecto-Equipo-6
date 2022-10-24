@@ -81,11 +81,11 @@
     <Compile Include="clientes.Designer.cs">
       <DependentUpon>clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="combo1.cs">
+    <Compile Include="Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="combo1.Designer.cs">
-      <DependentUpon>combo1.cs</DependentUpon>
+    <Compile Include="Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -166,8 +166,8 @@
     <EmbeddedResource Include="clientes.resx">
       <DependentUpon>clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="combo1.resx">
-      <DependentUpon>combo1.cs</DependentUpon>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="empleados.resx">
       <DependentUpon>empleados.cs</DependentUpon>

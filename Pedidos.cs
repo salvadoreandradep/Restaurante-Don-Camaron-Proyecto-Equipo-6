@@ -43,5 +43,30 @@ namespace Semena_6___Parcial_1
                 MessageBox.Show("Error de conexion", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Creado el dato en la tabla Pedidos");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha modificado el dato en la tabla Pedidos");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Eliminado el dato en la tabla Pedidos");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Guardado el dato en la tabla Pedidos");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

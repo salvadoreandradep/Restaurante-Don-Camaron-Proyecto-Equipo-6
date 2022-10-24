@@ -43,70 +43,71 @@ namespace Semena_6___Parcial_1
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bactualizar = new System.Windows.Forms.Button();
-            this.bguardar = new System.Windows.Forms.Button();
-            this.bsalir = new System.Windows.Forms.Button();
-            this.bmodificar = new System.Windows.Forms.Button();
-            this.beliminar = new System.Windows.Forms.Button();
-            this.bnuevo = new System.Windows.Forms.Button();
-            this.bultimo = new System.Windows.Forms.Button();
-            this.bsiguiente = new System.Windows.Forms.Button();
-            this.banterior = new System.Windows.Forms.Button();
-            this.bprimero = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 62);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(39, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(93, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "NOMBRE";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(333, 62);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(414, 60);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(100, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "APELLIDO";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 127);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(92, 123);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 13);
+            this.label4.Size = new System.Drawing.Size(40, 24);
             this.label4.TabIndex = 6;
             this.label4.Text = "DUI";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 160);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(18, 158);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.Size = new System.Drawing.Size(114, 24);
             this.label5.TabIndex = 7;
             this.label5.Text = "TELEFONO";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(263, 124);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(285, 106);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 13);
+            this.label6.Size = new System.Drawing.Size(229, 24);
             this.label6.TabIndex = 8;
             this.label6.Text = "FECHA DE NACIMIENTO";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(326, 167);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(402, 153);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 13);
+            this.label7.Size = new System.Drawing.Size(112, 24);
             this.label7.TabIndex = 9;
             this.label7.Text = "DIRECCION";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -123,7 +124,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 59);
+            this.textBox1.Location = new System.Drawing.Point(138, 60);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(202, 20);
@@ -131,7 +132,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(398, 59);
+            this.textBox2.Location = new System.Drawing.Point(532, 59);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(198, 20);
@@ -139,7 +140,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(91, 120);
+            this.textBox3.Location = new System.Drawing.Point(138, 124);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(114, 20);
@@ -147,7 +148,7 @@ namespace Semena_6___Parcial_1
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(91, 160);
+            this.textBox4.Location = new System.Drawing.Point(138, 157);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(116, 20);
@@ -155,15 +156,15 @@ namespace Semena_6___Parcial_1
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(398, 163);
+            this.textBox5.Location = new System.Drawing.Point(532, 153);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(326, 32);
+            this.textBox5.Size = new System.Drawing.Size(231, 74);
             this.textBox5.TabIndex = 15;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(399, 123);
+            this.dateTimePicker1.Location = new System.Drawing.Point(532, 106);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 16;
@@ -172,102 +173,65 @@ namespace Semena_6___Parcial_1
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 332);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 306);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(731, 279);
             this.dataGridView1.TabIndex = 18;
             // 
-            // bactualizar
+            // button5
             // 
-            this.bactualizar.Location = new System.Drawing.Point(202, 279);
-            this.bactualizar.Name = "bactualizar";
-            this.bactualizar.Size = new System.Drawing.Size(75, 23);
-            this.bactualizar.TabIndex = 46;
-            this.bactualizar.Text = "Actualizar";
-            this.bactualizar.UseVisualStyleBackColor = true;
-            this.bactualizar.Visible = false;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(618, 253);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(99, 34);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "Salir";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // bguardar
+            // button4
             // 
-            this.bguardar.Location = new System.Drawing.Point(30, 279);
-            this.bguardar.Name = "bguardar";
-            this.bguardar.Size = new System.Drawing.Size(75, 23);
-            this.bguardar.TabIndex = 45;
-            this.bguardar.Text = "Guardar";
-            this.bguardar.UseVisualStyleBackColor = true;
-            this.bguardar.Visible = false;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(479, 253);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(99, 34);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // bsalir
+            // button3
             // 
-            this.bsalir.Location = new System.Drawing.Point(286, 249);
-            this.bsalir.Name = "bsalir";
-            this.bsalir.Size = new System.Drawing.Size(75, 23);
-            this.bsalir.TabIndex = 44;
-            this.bsalir.Text = "Salir";
-            this.bsalir.UseVisualStyleBackColor = true;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(332, 253);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 34);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Modificar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // bmodificar
+            // button2
             // 
-            this.bmodificar.Location = new System.Drawing.Point(202, 249);
-            this.bmodificar.Name = "bmodificar";
-            this.bmodificar.Size = new System.Drawing.Size(75, 23);
-            this.bmodificar.TabIndex = 43;
-            this.bmodificar.Text = "Modificar";
-            this.bmodificar.UseVisualStyleBackColor = true;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(185, 253);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 34);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // beliminar
+            // button1
             // 
-            this.beliminar.Location = new System.Drawing.Point(115, 249);
-            this.beliminar.Name = "beliminar";
-            this.beliminar.Size = new System.Drawing.Size(75, 23);
-            this.beliminar.TabIndex = 42;
-            this.beliminar.Text = "Eliminar";
-            this.beliminar.UseVisualStyleBackColor = true;
-            // 
-            // bnuevo
-            // 
-            this.bnuevo.Location = new System.Drawing.Point(30, 249);
-            this.bnuevo.Name = "bnuevo";
-            this.bnuevo.Size = new System.Drawing.Size(75, 23);
-            this.bnuevo.TabIndex = 41;
-            this.bnuevo.Text = "Nuevo";
-            this.bnuevo.UseVisualStyleBackColor = true;
-            // 
-            // bultimo
-            // 
-            this.bultimo.Location = new System.Drawing.Point(286, 218);
-            this.bultimo.Name = "bultimo";
-            this.bultimo.Size = new System.Drawing.Size(75, 23);
-            this.bultimo.TabIndex = 40;
-            this.bultimo.Text = "Ultimo";
-            this.bultimo.UseVisualStyleBackColor = true;
-            // 
-            // bsiguiente
-            // 
-            this.bsiguiente.Location = new System.Drawing.Point(202, 217);
-            this.bsiguiente.Name = "bsiguiente";
-            this.bsiguiente.Size = new System.Drawing.Size(75, 23);
-            this.bsiguiente.TabIndex = 39;
-            this.bsiguiente.Text = "Siguiente";
-            this.bsiguiente.UseVisualStyleBackColor = true;
-            // 
-            // banterior
-            // 
-            this.banterior.Location = new System.Drawing.Point(115, 217);
-            this.banterior.Name = "banterior";
-            this.banterior.Size = new System.Drawing.Size(75, 23);
-            this.banterior.TabIndex = 38;
-            this.banterior.Text = "Anterior";
-            this.banterior.UseVisualStyleBackColor = true;
-            // 
-            // bprimero
-            // 
-            this.bprimero.Location = new System.Drawing.Point(30, 217);
-            this.bprimero.Name = "bprimero";
-            this.bprimero.Size = new System.Drawing.Size(75, 23);
-            this.bprimero.TabIndex = 37;
-            this.bprimero.Text = "Primero";
-            this.bprimero.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(59, 253);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 34);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Nuevo";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // clientes
             // 
@@ -275,16 +239,11 @@ namespace Semena_6___Parcial_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(800, 632);
-            this.Controls.Add(this.bactualizar);
-            this.Controls.Add(this.bguardar);
-            this.Controls.Add(this.bsalir);
-            this.Controls.Add(this.bmodificar);
-            this.Controls.Add(this.beliminar);
-            this.Controls.Add(this.bnuevo);
-            this.Controls.Add(this.bultimo);
-            this.Controls.Add(this.bsiguiente);
-            this.Controls.Add(this.banterior);
-            this.Controls.Add(this.bprimero);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox5);
@@ -323,15 +282,10 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button bactualizar;
-        private System.Windows.Forms.Button bguardar;
-        private System.Windows.Forms.Button bsalir;
-        private System.Windows.Forms.Button bmodificar;
-        private System.Windows.Forms.Button beliminar;
-        private System.Windows.Forms.Button bnuevo;
-        private System.Windows.Forms.Button bultimo;
-        private System.Windows.Forms.Button bsiguiente;
-        private System.Windows.Forms.Button banterior;
-        private System.Windows.Forms.Button bprimero;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
