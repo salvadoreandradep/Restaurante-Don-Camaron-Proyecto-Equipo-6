@@ -49,8 +49,10 @@ namespace Semena_6___Parcial_1
             txtnombre.Visible = true;
             txtdis.Visible = true;
             txtdes.Visible = true;
+            txtid.Visible = true;
 
             button2.Visible = true;
+
 
 
             MessageBox.Show("Ya puedes crear un nuevo registro");
@@ -114,19 +116,18 @@ namespace Semena_6___Parcial_1
                 {
                     myConnectionString = @"Database = login; Data Source = localhost; User Id = AndradePeña; Password = Huaweiz5";} 
                 MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                    string myInsertQuery = "UPDATE login SET nombre=?nombre, Distribuidor=?Distribuidor  Where id = " + txtid.Text + ""; 
+                    string myInsertQuery = "UPDATE `combos` SET `Nombre` = "+ txtnombre + "`Distribuidor` = "+ txtdis + " `Disponibles` =" + txtdes + " WHERE `combos`.`Codigo` ="+ txtid + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-                myCommand.Parameters.Add("?Nombre", MySqlDbType.VarChar, 40).Value = txtnombre.Text;
-                myCommand.Parameters.Add("?Distribuidor", MySqlDbType.VarChar, 45).Value = txtdis.Text;
-                myCommand.Parameters.Add("?Disponibles", MySqlDbType.VarChar, 50).Value = txtdes.Text;
+              
+
                 myCommand.Connection = myConnection;
                     myConnection.Open();
                     myCommand.ExecuteNonQuery();
                     myCommand.Connection.Close();
            
 
-                string cad = "Database=agenda;Data Source=localhost;User Id=root;Password=";
-                string query = "select * from login";
+                string cad = @"Database=login;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5";
+                string query = "select * from combos";
                 MySqlConnection cnn = new MySqlConnection(cad);
                 MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
                 System.Data.DataSet ds = new System.Data.DataSet();
@@ -155,7 +156,7 @@ namespace Semena_6___Parcial_1
                     myConnectionString = @"Database=login;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5"; ;
                 }
                 MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                string myInsertQuery = "DELETE FROM login Where id=" + txtid.Text + "";
+                string myInsertQuery = "DELETE FROM combos WHERE `combos`.`Codigo` = " + txtid.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -165,7 +166,7 @@ namespace Semena_6___Parcial_1
 
 
                 string cad = @"Database=login;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5";
-                string query = "select * from login";
+                string query = "select * from combos";
                 MySqlConnection cnn = new MySqlConnection(cad);
                 MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
                 System.Data.DataSet ds = new System.Data.DataSet();

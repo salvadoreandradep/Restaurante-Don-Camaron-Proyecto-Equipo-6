@@ -76,7 +76,7 @@ namespace Semena_6___Parcial_1
             myCommand.Parameters.Add("?Dui", MySqlDbType.VarChar, 50).Value = txtdui.Text;
             myCommand.Parameters.Add("?Fecha_de_Nacimiento", MySqlDbType.VarChar, 50).Value = txtfechan.Text;
             myCommand.Parameters.Add("?Telefono", MySqlDbType.VarChar, 50).Value = txtcel.Text;
-            myCommand.Parameters.Add("?Direccion", MySqlDbType.Text, 50).Value = txtdirec.Text;
+            myCommand.Parameters.Add("?Direccion", MySqlDbType.VarChar, 50).Value = txtdirec.Text;
 
             myCommand.Connection = myConnection;
             myConnection.Open();

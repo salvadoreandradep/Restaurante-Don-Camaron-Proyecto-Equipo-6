@@ -34,21 +34,21 @@ namespace Semena_6___Parcial_1
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtapellido = new System.Windows.Forms.TextBox();
+            this.txtarea = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtt1 = new System.Windows.Forms.TextBox();
+            this.txtt2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,12 +104,12 @@ namespace Semena_6___Parcial_1
             this.textBox1.TabIndex = 5;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtnombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 105);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtnombre.Location = new System.Drawing.Point(126, 105);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(180, 20);
+            this.txtnombre.TabIndex = 6;
             // 
             // label2
             // 
@@ -121,19 +121,19 @@ namespace Semena_6___Parcial_1
             this.label2.TabIndex = 1;
             this.label2.Text = "Apellido";
             // 
-            // textBox3
+            // txtapellido
             // 
-            this.textBox3.Location = new System.Drawing.Point(399, 106);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(180, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtapellido.Location = new System.Drawing.Point(399, 106);
+            this.txtapellido.Name = "txtapellido";
+            this.txtapellido.Size = new System.Drawing.Size(180, 20);
+            this.txtapellido.TabIndex = 7;
             // 
-            // textBox5
+            // txtarea
             // 
-            this.textBox5.Location = new System.Drawing.Point(126, 168);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(180, 20);
-            this.textBox5.TabIndex = 9;
+            this.txtarea.Location = new System.Drawing.Point(126, 168);
+            this.txtarea.Name = "txtarea";
+            this.txtarea.Size = new System.Drawing.Size(180, 20);
+            this.txtarea.TabIndex = 9;
             // 
             // label6
             // 
@@ -144,13 +144,6 @@ namespace Semena_6___Parcial_1
             this.label6.Size = new System.Drawing.Size(200, 39);
             this.label6.TabIndex = 10;
             this.label6.Text = "Empleados";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(126, 136);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 14;
             // 
             // label7
             // 
@@ -171,13 +164,6 @@ namespace Semena_6___Parcial_1
             this.label8.Size = new System.Drawing.Size(20, 24);
             this.label8.TabIndex = 16;
             this.label8.Text = "a";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(361, 138);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 17;
             // 
             // dataGridView1
             // 
@@ -242,26 +228,40 @@ namespace Semena_6___Parcial_1
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtt1
+            // 
+            this.txtt1.Location = new System.Drawing.Point(139, 136);
+            this.txtt1.Name = "txtt1";
+            this.txtt1.Size = new System.Drawing.Size(180, 20);
+            this.txtt1.TabIndex = 25;
+            // 
+            // txtt2
+            // 
+            this.txtt2.Location = new System.Drawing.Point(378, 141);
+            this.txtt2.Name = "txtt2";
+            this.txtt2.Size = new System.Drawing.Size(180, 20);
+            this.txtt2.TabIndex = 26;
+            // 
             // empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(679, 450);
+            this.Controls.Add(this.txtt2);
+            this.Controls.Add(this.txtt1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtarea);
+            this.Controls.Add(this.txtapellido);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -284,20 +284,20 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtapellido;
+        private System.Windows.Forms.TextBox txtarea;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtt1;
+        private System.Windows.Forms.TextBox txtt2;
     }
 }

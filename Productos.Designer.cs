@@ -50,7 +50,7 @@ namespace Semena_6___Parcial_1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 102);
+            this.label1.Location = new System.Drawing.Point(45, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 24);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@ namespace Semena_6___Parcial_1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 152);
+            this.label2.Location = new System.Drawing.Point(20, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 24);
             this.label2.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace Semena_6___Parcial_1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 198);
+            this.label3.Location = new System.Drawing.Point(16, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 24);
             this.label3.TabIndex = 2;
@@ -80,7 +80,7 @@ namespace Semena_6___Parcial_1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(45, 250);
+            this.label4.Location = new System.Drawing.Point(45, 232);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 24);
             this.label4.TabIndex = 3;
@@ -88,7 +88,7 @@ namespace Semena_6___Parcial_1
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(143, 102);
+            this.txtnombre.Location = new System.Drawing.Point(143, 82);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(180, 20);
             this.txtnombre.TabIndex = 4;
@@ -96,7 +96,7 @@ namespace Semena_6___Parcial_1
             // 
             // txtdis
             // 
-            this.txtdis.Location = new System.Drawing.Point(143, 148);
+            this.txtdis.Location = new System.Drawing.Point(143, 135);
             this.txtdis.Name = "txtdis";
             this.txtdis.Size = new System.Drawing.Size(180, 20);
             this.txtdis.TabIndex = 5;
@@ -104,7 +104,7 @@ namespace Semena_6___Parcial_1
             // 
             // txtdes
             // 
-            this.txtdes.Location = new System.Drawing.Point(143, 198);
+            this.txtdes.Location = new System.Drawing.Point(143, 188);
             this.txtdes.Name = "txtdes";
             this.txtdes.Size = new System.Drawing.Size(180, 20);
             this.txtdes.TabIndex = 6;
@@ -177,10 +177,11 @@ namespace Semena_6___Parcial_1
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(141, 254);
+            this.txtid.Location = new System.Drawing.Point(143, 237);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(104, 20);
-            this.txtid.TabIndex = 35;
+            this.txtid.Size = new System.Drawing.Size(180, 20);
+            this.txtid.TabIndex = 32;
+            this.txtid.Visible = false;
             // 
             // Productos
             // 

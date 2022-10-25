@@ -103,15 +103,15 @@ namespace Semena_6___Parcial_1
         private void button2_Click(object sender, EventArgs e)
         {
             MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-            string myInsertQuery = "INSERT INTO clientes(Nombre,Apellido,Dui, Fecha_de_Nacimiento ,Telefono,Direccion) Values(?Nombre, ?Apellido, ?Dui, ?Fecha_de_Nacimiento, ?Telefono, ?Direccion";
+            string myInsertQuery = "INSERT INTO Puesto(Nombre,Apellido,DUI, Correo,Genero,Puesto) Values(?Nombre, ?Apellido, ?DUI, ?Correo, ?Genero, ?Puesto";
             MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
             myCommand.Parameters.Add("?Nombre", MySqlDbType.VarChar, 50).Value = txtnombre.Text;
             myCommand.Parameters.Add("?Apellido", MySqlDbType.VarChar, 50).Value = txtapellido.Text;
-            myCommand.Parameters.Add("?Dui", MySqlDbType.VarChar, 50).Value = txtdui.Text;
-            myCommand.Parameters.Add("?Fecha_de_Nacimiento", MySqlDbType.VarChar, 50).Value = txtfechan.Text;
-            myCommand.Parameters.Add("?Telefono", MySqlDbType.VarChar, 50).Value = txtcel.Text;
-            myCommand.Parameters.Add("?Direccion", MySqlDbType.Text, 50).Value = txtdirec.Text;
+            myCommand.Parameters.Add("?DUI", MySqlDbType.VarChar, 50).Value = txtdui.Text;
+            myCommand.Parameters.Add("?Correo", MySqlDbType.VarChar, 50).Value = txtcorreo.Text;
+            myCommand.Parameters.Add("?Genero", MySqlDbType.VarChar, 50).Value = txtgenero.Text;
+            myCommand.Parameters.Add("?Puesto", MySqlDbType.VarChar, 50).Value = txtpuesto.Text;
 
             myCommand.Connection = myConnection;
             myConnection.Open();
@@ -121,7 +121,7 @@ namespace Semena_6___Parcial_1
             MessageBox.Show("Producto agregado con éxito", "Ok", MessageBoxButtons.OK,
             MessageBoxIcon.Information);
 
-            string consulta = "select * from clientes";
+            string consulta = "select * from Puesto";
 
             MySqlConnection conexion = new MySqlConnection(cadena_conexion);
             MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);

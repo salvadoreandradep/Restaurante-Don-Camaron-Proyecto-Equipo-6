@@ -35,8 +35,7 @@ namespace Semena_6___Parcial_1
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.cs = new System.Windows.Forms.TextBox();
-            this.txtfecha = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.txttarea = new System.Windows.Forms.TextBox();
             this.txtdescrip = new System.Windows.Forms.TextBox();
             this.txtobs = new System.Windows.Forms.TextBox();
@@ -49,6 +48,7 @@ namespace Semena_6___Parcial_1
             this.txtapro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtoperario = new System.Windows.Forms.TextBox();
+            this.txtfecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,21 +112,13 @@ namespace Semena_6___Parcial_1
             this.label7.TabIndex = 6;
             this.label7.Text = "Visto Bueno";
             // 
-            // cs
+            // txtid
             // 
-            this.cs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cs.Location = new System.Drawing.Point(149, 27);
-            this.cs.Name = "cs";
-            this.cs.Size = new System.Drawing.Size(110, 31);
-            this.cs.TabIndex = 7;
-            // 
-            // txtfecha
-            // 
-            this.txtfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfecha.Location = new System.Drawing.Point(149, 73);
-            this.txtfecha.Name = "txtfecha";
-            this.txtfecha.Size = new System.Drawing.Size(110, 31);
-            this.txtfecha.TabIndex = 8;
+            this.txtid.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtid.Location = new System.Drawing.Point(149, 27);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(110, 31);
+            this.txtid.TabIndex = 7;
             // 
             // txttarea
             // 
@@ -241,12 +233,20 @@ namespace Semena_6___Parcial_1
             this.txtoperario.Size = new System.Drawing.Size(110, 31);
             this.txtoperario.TabIndex = 10;
             // 
+            // txtfecha
+            // 
+            this.txtfecha.Location = new System.Drawing.Point(140, 75);
+            this.txtfecha.Name = "txtfecha";
+            this.txtfecha.Size = new System.Drawing.Size(200, 20);
+            this.txtfecha.TabIndex = 23;
+            // 
             // Bitacora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 467);
+            this.Controls.Add(this.txtfecha);
             this.Controls.Add(this.txtapro);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button5);
@@ -258,8 +258,7 @@ namespace Semena_6___Parcial_1
             this.Controls.Add(this.txtdescrip);
             this.Controls.Add(this.txtoperario);
             this.Controls.Add(this.txttarea);
-            this.Controls.Add(this.txtfecha);
-            this.Controls.Add(this.cs);
+            this.Controls.Add(this.txtid);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -285,8 +284,7 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox cs;
-        private System.Windows.Forms.TextBox txtfecha;
+        private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.TextBox txttarea;
         private System.Windows.Forms.TextBox txtdescrip;
         private System.Windows.Forms.TextBox txtobs;
@@ -299,5 +297,6 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.TextBox txtapro;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtoperario;
+        private System.Windows.Forms.DateTimePicker txtfecha;
     }
 }

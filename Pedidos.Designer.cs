@@ -34,11 +34,11 @@ namespace Semena_6___Parcial_1
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtapellido = new System.Windows.Forms.TextBox();
+            this.txtordent = new System.Windows.Forms.TextBox();
+            this.txtproducto = new System.Windows.Forms.TextBox();
+            this.txtcanti = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -99,40 +99,40 @@ namespace Semena_6___Parcial_1
             this.label5.TabIndex = 4;
             this.label5.Text = "Orden Tomada por";
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(244, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtnombre.Location = new System.Drawing.Point(244, 34);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(133, 20);
+            this.txtnombre.TabIndex = 5;
             // 
-            // textBox2
+            // txtapellido
             // 
-            this.textBox2.Location = new System.Drawing.Point(582, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtapellido.Location = new System.Drawing.Point(582, 34);
+            this.txtapellido.Name = "txtapellido";
+            this.txtapellido.Size = new System.Drawing.Size(100, 20);
+            this.txtapellido.TabIndex = 6;
             // 
-            // textBox3
+            // txtordent
             // 
-            this.textBox3.Location = new System.Drawing.Point(244, 170);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtordent.Location = new System.Drawing.Point(244, 170);
+            this.txtordent.Name = "txtordent";
+            this.txtordent.Size = new System.Drawing.Size(133, 20);
+            this.txtordent.TabIndex = 7;
             // 
-            // textBox4
+            // txtproducto
             // 
-            this.textBox4.Location = new System.Drawing.Point(244, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtproducto.Location = new System.Drawing.Point(244, 105);
+            this.txtproducto.Name = "txtproducto";
+            this.txtproducto.Size = new System.Drawing.Size(133, 20);
+            this.txtproducto.TabIndex = 8;
             // 
-            // textBox5
+            // txtcanti
             // 
-            this.textBox5.Location = new System.Drawing.Point(582, 103);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
+            this.txtcanti.Location = new System.Drawing.Point(582, 103);
+            this.txtcanti.Name = "txtcanti";
+            this.txtcanti.Size = new System.Drawing.Size(100, 20);
+            this.txtcanti.TabIndex = 9;
             // 
             // dataGridView1
             // 
@@ -209,11 +209,11 @@ namespace Semena_6___Parcial_1
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtcanti);
+            this.Controls.Add(this.txtproducto);
+            this.Controls.Add(this.txtordent);
+            this.Controls.Add(this.txtapellido);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -235,11 +235,11 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtapellido;
+        private System.Windows.Forms.TextBox txtordent;
+        private System.Windows.Forms.TextBox txtproducto;
+        private System.Windows.Forms.TextBox txtcanti;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;

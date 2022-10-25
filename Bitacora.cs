@@ -68,6 +68,37 @@ namespace Semena_6___Parcial_1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string myConnectionString = "";
+                if (myConnectionString == "")
+                {
+                    myConnectionString = @"Database=empleados;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5"; ;
+                }
+                MySqlConnection myConnection = new MySqlConnection(myConnectionString);
+                string myInsertQuery = "DELETE FROM bitacora WHERE `bitacora`.`Codigo` = " + txtid.Text + "";
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+
+
+                string cad = @"Database=empleados;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5";
+                string query = "select * from bitacora";
+                MySqlConnection cnn = new MySqlConnection(cad);
+                MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "empleados");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "empleados";
+            }
+            catch (System.Exception)
+            {
+                MessageBox.Show("No se ha podido hacer la eliminacion");
+
+            }
             MessageBox.Show("Se ha Eliminado el dato de la tabla Bitacora");
         }
 
