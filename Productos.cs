@@ -46,17 +46,14 @@ namespace Semena_6___Parcial_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtnombre.Enabled = true;
-            txtdis.Enabled = true;
+            txtnombre.Visible = true;
+            txtdis.Visible = true;
+            txtdes.Visible = true;
 
-            txtdes.Enabled = true;
-            txtnombre.Text = "";
-            txtdis.Text = "";
-            txtdes.Text = "";
+            button2.Visible = true;
 
 
-
-            MessageBox.Show("Se ha creado el dato en la tabla Productos");
+            MessageBox.Show("Ya puedes crear un nuevo registro");
         }
 
 
@@ -94,9 +91,10 @@ namespace Semena_6___Parcial_1
 
             MessageBox.Show("Se ha guardado el dato en la tabla Productos");
 
-
-
         }
+
+
+    
 
 
 
@@ -109,8 +107,41 @@ namespace Semena_6___Parcial_1
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                string myConnectionString = "";
+                if (myConnectionString == "")
+                {
+                    myConnectionString = @"Database = login; Data Source = localhost; User Id = AndradePeña; Password = Huaweiz5";} 
+                MySqlConnection myConnection = new MySqlConnection(myConnectionString);
+                    string myInsertQuery = "UPDATE login SET nombre=?nombre, Distribuidor=?Distribuidor  Where id = " + txtid.Text + ""; 
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+                myCommand.Parameters.Add("?Nombre", MySqlDbType.VarChar, 40).Value = txtnombre.Text;
+                myCommand.Parameters.Add("?Distribuidor", MySqlDbType.VarChar, 45).Value = txtdis.Text;
+                myCommand.Parameters.Add("?Disponibles", MySqlDbType.VarChar, 50).Value = txtdes.Text;
+                myCommand.Connection = myConnection;
+                    myConnection.Open();
+                    myCommand.ExecuteNonQuery();
+                    myCommand.Connection.Close();
+           
+
+                string cad = "Database=agenda;Data Source=localhost;User Id=root;Password=";
+                string query = "select * from login";
+                MySqlConnection cnn = new MySqlConnection(cad);
+                MySqlDataAdapter da = new MySqlDataAdapter(query, cnn);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "login");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "login";
+            }
+            catch (System.Exception)
+            {
+
+               
+            }
 
             MessageBox.Show("Se ha Modificado el dato en la tabla Productos");
+
         }
 
         private void button4_Click_1(object sender, EventArgs e)
@@ -124,7 +155,7 @@ namespace Semena_6___Parcial_1
                     myConnectionString = @"Database=login;Data Source=localhost;User Id=AndradePeña;Password=Huaweiz5"; ;
                 }
                 MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-                string myInsertQuery = "DELETE FROM login Where id=" + id.Text + "";
+                string myInsertQuery = "DELETE FROM login Where id=" + txtid.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                 myCommand.Connection = myConnection;
                 myConnection.Open();

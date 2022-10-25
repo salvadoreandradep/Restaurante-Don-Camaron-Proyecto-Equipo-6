@@ -23,11 +23,41 @@ namespace Semena_6___Parcial_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Se ha Creado el dato en la tabla Bitacora");
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+            string myInsertQuery = "INSERT INTO bitacora(Fecha,Tarea,Operario, Descripcion,Observaciones,Aprobacion) Values(?Fecha, ?Tarea, ?Operario, ?Descripcion, ?Observaciones, ?Aprobacion)";
+            MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+            myCommand.Parameters.Add("?Fecha", MySqlDbType.VarChar, 50).Value = txtfecha.Text;
+            myCommand.Parameters.Add("?Tarea", MySqlDbType.VarChar, 50).Value = txttarea.Text;
+            myCommand.Parameters.Add("?Operario", MySqlDbType.VarChar, 50).Value = txtoperario.Text;
+            myCommand.Parameters.Add("?Descripcion", MySqlDbType.VarChar, 50).Value = txtdescrip.Text;
+            myCommand.Parameters.Add("?Observaciones", MySqlDbType.VarChar, 50).Value = txtobs.Text;
+            myCommand.Parameters.Add("?Aprobacion", MySqlDbType.VarChar, 50).Value = txtapro.Text;
+
+            myCommand.Connection = myConnection;
+            myConnection.Open();
+            myCommand.ExecuteNonQuery();
+            myCommand.Connection.Close();
+
+            MessageBox.Show("Producto agregado con éxito", "Ok", MessageBoxButtons.OK,
+            MessageBoxIcon.Information);
+
+            string consulta = "select * from bitacora";
+
+            MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+            MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
+            System.Data.DataSet ds = new System.Data.DataSet();
+            comando.Fill(ds, "empleados");
+            dataGridView1.DataSource = ds;
+            dataGridView1.DataMember = "empleados";
+
+
+
             MessageBox.Show("Se ha Guardado el dato en la tabla Bitacora");
         }
 

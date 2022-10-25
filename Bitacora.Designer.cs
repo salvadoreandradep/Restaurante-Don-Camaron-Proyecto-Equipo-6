@@ -32,23 +32,23 @@ namespace Semena_6___Parcial_1
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.cs = new System.Windows.Forms.TextBox();
+            this.txtfecha = new System.Windows.Forms.TextBox();
+            this.txttarea = new System.Windows.Forms.TextBox();
+            this.txtdescrip = new System.Windows.Forms.TextBox();
+            this.txtobs = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtapro = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtoperario = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,16 +82,6 @@ namespace Semena_6___Parcial_1
             this.label3.TabIndex = 2;
             this.label3.Text = "Tarea";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(53, 161);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 25);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Operario";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -106,7 +96,7 @@ namespace Semena_6___Parcial_1
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(318, 86);
+            this.label6.Location = new System.Drawing.Point(394, 91);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(156, 25);
             this.label6.TabIndex = 5;
@@ -116,57 +106,51 @@ namespace Semena_6___Parcial_1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(327, 137);
+            this.label7.Location = new System.Drawing.Point(422, 146);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 25);
             this.label7.TabIndex = 6;
             this.label7.Text = "Visto Bueno";
             // 
-            // textBox1
+            // cs
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(149, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 31);
-            this.textBox1.TabIndex = 7;
+            this.cs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cs.Location = new System.Drawing.Point(149, 27);
+            this.cs.Name = "cs";
+            this.cs.Size = new System.Drawing.Size(110, 31);
+            this.cs.TabIndex = 7;
             // 
-            // textBox2
+            // txtfecha
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(149, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(110, 31);
-            this.textBox2.TabIndex = 8;
+            this.txtfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfecha.Location = new System.Drawing.Point(149, 73);
+            this.txtfecha.Name = "txtfecha";
+            this.txtfecha.Size = new System.Drawing.Size(110, 31);
+            this.txtfecha.TabIndex = 8;
             // 
-            // textBox3
+            // txttarea
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(149, 113);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(110, 31);
-            this.textBox3.TabIndex = 9;
+            this.txttarea.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttarea.Location = new System.Drawing.Point(149, 113);
+            this.txttarea.Name = "txttarea";
+            this.txttarea.Size = new System.Drawing.Size(110, 31);
+            this.txttarea.TabIndex = 9;
             // 
-            // textBox4
+            // txtdescrip
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(149, 160);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(110, 31);
-            this.textBox4.TabIndex = 10;
+            this.txtdescrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdescrip.Location = new System.Drawing.Point(569, 32);
+            this.txtdescrip.Name = "txtdescrip";
+            this.txtdescrip.Size = new System.Drawing.Size(189, 29);
+            this.txtdescrip.TabIndex = 11;
             // 
-            // textBox5
+            // txtobs
             // 
-            this.textBox5.Location = new System.Drawing.Point(569, 32);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 20);
-            this.textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(569, 91);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(189, 20);
-            this.textBox6.TabIndex = 12;
+            this.txtobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtobs.Location = new System.Drawing.Point(569, 91);
+            this.txtobs.Name = "txtobs";
+            this.txtobs.Size = new System.Drawing.Size(189, 29);
+            this.txtobs.TabIndex = 12;
             // 
             // button1
             // 
@@ -182,7 +166,7 @@ namespace Semena_6___Parcial_1
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(212, 421);
+            this.button2.Location = new System.Drawing.Point(223, 421);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(93, 34);
             this.button2.TabIndex = 16;
@@ -223,17 +207,6 @@ namespace Semena_6___Parcial_1
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "SI",
-            "NO"});
-            this.checkedListBox1.Location = new System.Drawing.Point(569, 128);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(53, 34);
-            this.checkedListBox1.TabIndex = 20;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -242,25 +215,51 @@ namespace Semena_6___Parcial_1
             this.dataGridView1.Size = new System.Drawing.Size(700, 181);
             this.dataGridView1.TabIndex = 21;
             // 
+            // txtapro
+            // 
+            this.txtapro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtapro.Location = new System.Drawing.Point(569, 142);
+            this.txtapro.Name = "txtapro";
+            this.txtapro.Size = new System.Drawing.Size(189, 29);
+            this.txtapro.TabIndex = 22;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(22, 163);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(121, 25);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Aprobacion";
+            // 
+            // txtoperario
+            // 
+            this.txtoperario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtoperario.Location = new System.Drawing.Point(149, 160);
+            this.txtoperario.Name = "txtoperario";
+            this.txtoperario.Size = new System.Drawing.Size(110, 31);
+            this.txtoperario.TabIndex = 10;
+            // 
             // Bitacora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 467);
+            this.Controls.Add(this.txtapro);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtobs);
+            this.Controls.Add(this.txtdescrip);
+            this.Controls.Add(this.txtoperario);
+            this.Controls.Add(this.txttarea);
+            this.Controls.Add(this.txtfecha);
+            this.Controls.Add(this.cs);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -283,22 +282,22 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox cs;
+        private System.Windows.Forms.TextBox txtfecha;
+        private System.Windows.Forms.TextBox txttarea;
+        private System.Windows.Forms.TextBox txtdescrip;
+        private System.Windows.Forms.TextBox txtobs;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtapro;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtoperario;
     }
 }

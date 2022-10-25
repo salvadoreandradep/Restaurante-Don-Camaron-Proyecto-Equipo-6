@@ -42,8 +42,7 @@ namespace Semena_6___Parcial_1
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtco = new System.Windows.Forms.TextBox();
-            this.id = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,6 +92,7 @@ namespace Semena_6___Parcial_1
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(180, 20);
             this.txtnombre.TabIndex = 4;
+            this.txtnombre.Visible = false;
             // 
             // txtdis
             // 
@@ -100,6 +100,7 @@ namespace Semena_6___Parcial_1
             this.txtdis.Name = "txtdis";
             this.txtdis.Size = new System.Drawing.Size(180, 20);
             this.txtdis.TabIndex = 5;
+            this.txtdis.Visible = false;
             // 
             // txtdes
             // 
@@ -107,6 +108,7 @@ namespace Semena_6___Parcial_1
             this.txtdes.Name = "txtdes";
             this.txtdes.Size = new System.Drawing.Size(180, 20);
             this.txtdes.TabIndex = 6;
+            this.txtdes.Visible = false;
             // 
             // dataGridView1
             // 
@@ -153,12 +155,13 @@ namespace Semena_6___Parcial_1
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(188, 404);
+            this.button2.Location = new System.Drawing.Point(200, 404);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(93, 34);
             this.button2.TabIndex = 28;
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
@@ -172,19 +175,12 @@ namespace Semena_6___Parcial_1
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtco
+            // txtid
             // 
-            this.txtco.Location = new System.Drawing.Point(143, 254);
-            this.txtco.Name = "txtco";
-            this.txtco.Size = new System.Drawing.Size(104, 20);
-            this.txtco.TabIndex = 35;
-            // 
-            // id
-            // 
-            this.id.Location = new System.Drawing.Point(393, 23);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(395, 20);
-            this.id.TabIndex = 33;
+            this.txtid.Location = new System.Drawing.Point(141, 254);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(104, 20);
+            this.txtid.TabIndex = 35;
             // 
             // Productos
             // 
@@ -192,8 +188,7 @@ namespace Semena_6___Parcial_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtco);
-            this.Controls.Add(this.id);
+            this.Controls.Add(this.txtid);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -231,7 +226,6 @@ namespace Semena_6___Parcial_1
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtco;
-        private System.Windows.Forms.TextBox id;
+        private System.Windows.Forms.TextBox txtid;
     }
 }
