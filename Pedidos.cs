@@ -61,6 +61,38 @@ namespace Semena_6___Parcial_1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+            string myInsertQuery = "INSERT INTO clientes(Nombre,Apellido,Dui, Fecha_de_Nacimiento ,Telefono,Direccion) Values(?Nombre, ?Apellido, ?Dui, ?Fecha_de_Nacimiento, ?Telefono, ?Direccion";
+            MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+            myCommand.Parameters.Add("?Nombre", MySqlDbType.VarChar, 50).Value = txtnombre.Text;
+            myCommand.Parameters.Add("?Apellido", MySqlDbType.VarChar, 50).Value = txtapellido.Text;
+            myCommand.Parameters.Add("?Dui", MySqlDbType.VarChar, 50).Value = txtdui.Text;
+            myCommand.Parameters.Add("?Fecha_de_Nacimiento", MySqlDbType.VarChar, 50).Value = txtfechan.Text;
+            myCommand.Parameters.Add("?Telefono", MySqlDbType.VarChar, 50).Value = txtcel.Text;
+            myCommand.Parameters.Add("?Direccion", MySqlDbType.Text, 50).Value = txtdirec.Text;
+
+            myCommand.Connection = myConnection;
+            myConnection.Open();
+            myCommand.ExecuteNonQuery();
+            myCommand.Connection.Close();
+
+            MessageBox.Show("Producto agregado con éxito", "Ok", MessageBoxButtons.OK,
+            MessageBoxIcon.Information);
+
+            string consulta = "select * from clientes";
+
+            MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+            MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
+            System.Data.DataSet ds = new System.Data.DataSet();
+            comando.Fill(ds, "empleados");
+            dataGridView1.DataSource = ds;
+            dataGridView1.DataMember = "empleados";
+
+
+
+        
+
             MessageBox.Show("Se ha Guardado el dato en la tabla Pedidos");
         }
 
